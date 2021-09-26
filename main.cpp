@@ -12,7 +12,7 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     uint64_t white = init_white();
-    uint64_t black = init_white();
+    uint64_t black = init_black();
     print_board(black, white);
     bool isBlack;
     for (string input; getline(cin, input);) {
@@ -31,7 +31,7 @@ int main(int argc, char const *argv[])
             uint64_t move = pick_randomly(possible_moves);
             print_uint(possible_moves);
             print_uint(move);
-
+            black = make_move(move, black);
         }
         if (!input.compare(0, 1, "B")) {
             cout << "C black....";
@@ -43,7 +43,7 @@ int main(int argc, char const *argv[])
                 //converts a single char "int" to an int with ascii subtraction
                 int row = input[4] - '0';
                 cout << "moves to " << col << " " << row << endl;
-                uint64_t move = row_col_to_bit(col, row);
+                uint64_t move = col_row_to_bit(col, row);
                 black = make_move(move, black);
             }
         }
@@ -56,7 +56,7 @@ int main(int argc, char const *argv[])
                 char col = input[2];
                 //converts a single char "int" to an int with ascii subtraction
                 int row = input[4] - '0';
-                uint64_t move = row_col_to_bit(col, row);
+                uint64_t move = col_row_to_bit(col, row);
                 white = make_move(move, white);
                 print_board(black, white);
             }
@@ -70,6 +70,7 @@ int main(int argc, char const *argv[])
         if (!(sstream >> n).fail()) {
             cout << "C " << n << endl;
         }
+        print_board(black, white);
     }
     return 0;
 }

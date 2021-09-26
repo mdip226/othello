@@ -5,8 +5,10 @@
 void print_board(uint64_t black, uint64_t white)
 {
     uint64_t mask = 0b1000000000000000000000000000000000000000000000000000000000000000;
+    std::cout << "  a b c d e f g h" << std::endl;
     for (int i = 0; i < 8; ++i)
     {
+        std::cout << i+1 << " ";
         for (int j = 0; j < 8; ++j)
         {
             if ((white & mask) != 0)

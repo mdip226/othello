@@ -10,12 +10,15 @@
 #include "utils.h"
 using namespace std;
 
+#define AI 0 
+#define OPPONENT 1
+
 int main(int argc, char const *argv[])
 {
     // u64 test = 0x7F7F7F7F7F7F7F00;
     // print_uint(test);
-    uint64_t white = init_white();
-    uint64_t black = init_black();
+    u64 white = init_white();
+    u64 black = init_black();
     tuple<u64, u64> board;
     print_board(black, white);
     bool isBlack;
@@ -23,49 +26,42 @@ int main(int argc, char const *argv[])
         if (!input.compare("I B")) {
             //initialize AI as black
             isBlack = true;
-            board = tie(black, white);
+            board = make_tuple(black, white);
+            // board.white;
             cout << "C initialize as black" << endl;
         }
         if (!input.compare("I W")) {
             //initialize AI as white
             isBlack = false;
-            board = tie(black, white);
+            board = make_tuple(white, black);
             cout << "C initialize as white" << endl;
         }
-        if (isBlack) {
-            uint64_t possible_moves = get_legal_moves(black, white);
-            uint64_t move = pick_randomly(possible_moves);
-            print_uint(possible_moves);
-            print_uint(move);
-            board = play(move, black, white);
-            // black = _make_move(move, black);
-        }
         if (!input.compare(0, 1, "B")) {
-            cout << "C black....";
             if (input.length()==1) {
-                cout << "passes." << endl;
+                cout << "Black passes." << endl;
             }
             else {
                 char col = input[2];
                 //converts a single char "int" to an int with ascii subtraction
                 int row = input[4] - '0';
-                cout << "moves to " << col << " " << row << endl;
-                uint64_t move = col_row_to_bit(col, row);
-                black = _make_move(move, black);
+                cout << "C Black to " << col << " " << row << endl;
+                u64 move = col_row_to_bit(col, row);
+                get<1>(board) = _make_move(move, black);
             }
         }
         if (!input.compare(0, 1, "W")) {
-            cout << "C white....";
             if (input.length()==1) {
-                cout << "passes." << endl;
+                cout << "C White passes." << endl;
             }
             else {
                 char col = input[2];
                 //converts a single char "int" to an int with ascii subtraction
                 int row = input[4] - '0';
-                uint64_t move = col_row_to_bit(col, row);
-                white = _make_move(move, white);
-                print_board(black, white);
+                cout << "C white to " << col << " " << row << endl;
+                u64 move = col_row_to_bit(col, row);
+                // std::get<1>(board) = _make_move(move, white);
+                board = play(move, get<OPPONENT>(board), get<AI>(board), false);
+                print_board(get<AI>(board), get<OPPONENT>(board));
             }
         }
         if (!input.compare(0, 1, "C")) {
@@ -77,7 +73,20 @@ int main(int argc, char const *argv[])
         if (!(sstream >> n).fail()) {
             cout << "C " << n << endl;
         }
-        print_board(black, white);
+        if (isBlack) {
+            u64 possible_moves = get_legal_moves(get<AI>(board), get<OPPONENT>(board));
+            u64 move = pick_randomly(possible_moves);
+            cout << "possible_moves:" << endl;
+            print_uint(possible_moves);
+            cout << "possible_chosen:" << endl;
+            print_uint(move);
+            board = play(move, get<AI>(board), get<OPPONENT>(board), isBlack);
+        }
+        if (isBlack) {
+            print_board(get<0>(board), get<1>(board));
+        }else {
+            print_board(get<1>(board), get<0>(board));
+        }
     }
     return 0;
 }

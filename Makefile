@@ -10,4 +10,7 @@ $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
 
 clean:
-	rm -f $(OBJS) $(TARGET)
+	rm -f $(OBJS)
+
+clean_all:
+	rm -f $(TARGET)

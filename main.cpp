@@ -14,11 +14,6 @@ int main(int argc, char const *argv[])
     uint64_t white = init_white();
     uint64_t black = init_white();
     print_board(black, white);
-    // uint64_t moves = get_legal_moves(white, black);
-    // print_uint(moves);
-    // int num_moves = bitCount(moves);
-    // cout << "number of moves: " << num_moves << endl;
-    // print_legal_moves(white, black);
     bool isBlack;
     for (string input; getline(cin, input);) {
         if (!input.compare("I B")) {

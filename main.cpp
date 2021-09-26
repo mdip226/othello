@@ -3,6 +3,7 @@
 #include <string>
 #include <cstdint>
 #include <bitset>
+#include <tuple>
 #include "debug.h"
 #include "moves.h"
 #include "actions.h"
@@ -11,19 +12,24 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
+    // u64 test = 0x7F7F7F7F7F7F7F00;
+    // print_uint(test);
     uint64_t white = init_white();
     uint64_t black = init_black();
+    tuple<u64, u64> board;
     print_board(black, white);
     bool isBlack;
     for (string input; getline(cin, input);) {
         if (!input.compare("I B")) {
             //initialize AI as black
             isBlack = true;
+            board = tie(black, white);
             cout << "C initialize as black" << endl;
         }
         if (!input.compare("I W")) {
             //initialize AI as white
             isBlack = false;
+            board = tie(black, white);
             cout << "C initialize as white" << endl;
         }
         if (isBlack) {
@@ -31,7 +37,8 @@ int main(int argc, char const *argv[])
             uint64_t move = pick_randomly(possible_moves);
             print_uint(possible_moves);
             print_uint(move);
-            black = make_move(move, black);
+            board = play(move, black, white);
+            // black = _make_move(move, black);
         }
         if (!input.compare(0, 1, "B")) {
             cout << "C black....";
@@ -44,7 +51,7 @@ int main(int argc, char const *argv[])
                 int row = input[4] - '0';
                 cout << "moves to " << col << " " << row << endl;
                 uint64_t move = col_row_to_bit(col, row);
-                black = make_move(move, black);
+                black = _make_move(move, black);
             }
         }
         if (!input.compare(0, 1, "W")) {
@@ -57,7 +64,7 @@ int main(int argc, char const *argv[])
                 //converts a single char "int" to an int with ascii subtraction
                 int row = input[4] - '0';
                 uint64_t move = col_row_to_bit(col, row);
-                white = make_move(move, white);
+                white = _make_move(move, white);
                 print_board(black, white);
             }
         }

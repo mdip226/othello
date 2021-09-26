@@ -11,6 +11,7 @@ u64 _make_move(u64 move, u64 board)
 std::tuple<u64, u64> play(u64 move, u64 player, u64 opponent, bool isBlack) {
     // dont forget to check whether it is a legal move or not....
     // TODO: need to add & with empty spaces somewhere in algorithm!
+    // ACTUALLY i think we just need to check for the edge on that first adjacent piece and stop there
 
     player = _make_move(move, player);
     u64 flips_final = 0x0000000000000000;

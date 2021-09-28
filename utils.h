@@ -18,4 +18,5 @@ u64 col_row_to_bit(char col, int row);
 u64 init_black();
 u64 init_white();
 
+
 #endif // UTILS_H

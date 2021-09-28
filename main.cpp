@@ -59,7 +59,10 @@ int main(int argc, char const *argv[])
                 int row = input[4] - '0';
                 cout << "C white to " << col << " " << row << endl;
                 u64 move = col_row_to_bit(col, row);
-                // std::get<1>(board) = _make_move(move, white);
+                u64 possible_moves = get_legal_moves(get<OPPONENT>(board), get<AI>(board));
+                if ((move & possible_moves) == 0UL) {
+                    continue;
+                }
                 board = play(move, get<OPPONENT>(board), get<AI>(board), false);
                 print_board(get<AI>(board), get<OPPONENT>(board));
             }
@@ -74,18 +77,21 @@ int main(int argc, char const *argv[])
             cout << "C " << n << endl;
         }
         if (isBlack) {
+            cout << "possible black (AI) moves:" << endl;
+            print_legal_moves(get<OPPONENT>(board), get<AI>(board));
             u64 possible_moves = get_legal_moves(get<AI>(board), get<OPPONENT>(board));
             u64 move = pick_randomly(possible_moves);
-            cout << "possible_moves:" << endl;
-            print_uint(possible_moves);
+            if ((possible_moves & move) == 0UL) {
+                cout << "ERROR IN either get_legal_moves() or pick_randomly()";
+            }
             cout << "possible_chosen:" << endl;
             print_uint(move);
             board = play(move, get<AI>(board), get<OPPONENT>(board), isBlack);
-        }
-        if (isBlack) {
-            print_board(get<0>(board), get<1>(board));
+            print_board(get<AI>(board), get<OPPONENT>(board));
+            cout << "C Your possible_moves:" << endl;
+            print_legal_moves(get<OPPONENT>(board), get<AI>(board));
         }else {
-            print_board(get<1>(board), get<0>(board));
+            print_board(get<AI>(board), get<OPPONENT>(board));
         }
     }
     return 0;

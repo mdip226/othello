@@ -1,6 +1,7 @@
 #include <cstdint>
 #include <iostream>
 #include <bitset>
+#include <moves.h>
 
 void print_board(uint64_t black, uint64_t white)
 {
@@ -53,10 +54,10 @@ void print_uint(uint64_t bits) {
 
 void print_legal_moves(uint64_t player, uint64_t opponent)
 {
-    uint64_t full = player | opponent;
-    uint64_t mask = 0b0000000000000000000000000000000000000000000000000000000000000000;
-    uint64_t empty = (~full) & (~mask);
-    uint64_t moves = 0b0000000000000000000000000000000000000000000000000000000000000000;
+    // uint64_t full = player | opponent;
+    // uint64_t mask = 0b0000000000000000000000000000000000000000000000000000000000000000;
+    // uint64_t empty = (~full) & (~mask);
+    uint64_t moves = get_legal_moves();
     uint64_t candidates;
     int cols = 8;
     for (int i = 0; i < 8; ++i)
@@ -96,8 +97,10 @@ void print_legal_moves(uint64_t player, uint64_t opponent)
         // print_uint(moves);
     }
     uint64_t print_mask = 0b1000000000000000000000000000000000000000000000000000000000000000;
+    std::cout << "  a b c d e f g h" << std::endl;
     for (int i = 0; i < 8; ++i)
     {
+        std::cout << (i+1) << " ";
         for (int j = 0; j < 8; ++j)
         {
             if ((player & print_mask) != 0)
@@ -122,4 +125,5 @@ void print_legal_moves(uint64_t player, uint64_t opponent)
         }
         std::cout << "\n";
     }
+    std::cout << "\n";
 }

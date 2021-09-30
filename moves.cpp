@@ -71,10 +71,68 @@ uint64_t get_legal_moves(uint64_t player, uint64_t opponent) {
                 candidates = opponent & (candidates >> shift);
                 // std::cout << "C candidates:" << std::endl;
                 // print_uint(candidates);
+                switch (i)
+                {
+                case 0:
+                    candidates &= (~SOUTH);
+                    break;
+                case 1:
+                    candidates &= (~(SOUTH | EAST));
+                    break;
+                case 2:
+                    candidates &= (~EAST);
+                    break;
+                case 3:
+                    candidates &= (~(SOUTH | WEST));
+                    break;
+                case 4:
+                    candidates &= (~NORTH);
+                    break;
+                case 5:
+                    candidates &= (~(NORTH | WEST));
+                    break;
+                case 6:
+                    candidates &= (~WEST);
+                    break;
+                case 7:
+                    candidates &= (~(NORTH | EAST));
+                    break;
+                default:
+                    break;
+                }
             }
         }
         else
         {
+            switch (i)
+            {
+            case 0:
+                candidates &= (~SOUTH);
+                break;
+            case 1:
+                candidates &= (~(SOUTH | EAST));
+                break;
+            case 2:
+                candidates &= (~EAST);
+                break;
+            case 3:
+                candidates &= (~(SOUTH | WEST));
+                break;
+            case 4:
+                candidates &= (~NORTH);
+                break;
+            case 5:
+                candidates &= (~(NORTH | WEST));
+                break;
+            case 6:
+                candidates &= (~WEST);
+                break;
+            case 7:
+                candidates &= (~(NORTH | EAST));
+                break;
+            default:
+                break;
+            }
             candidates = opponent & (player << shift);
             // std::cout << "C candidates:" << std::endl;
             // print_uint(candidates);
@@ -88,6 +146,35 @@ uint64_t get_legal_moves(uint64_t player, uint64_t opponent) {
                 candidates = opponent & (candidates << shift);
                 // std::cout << "C candidates:" << std::endl;
                 // print_uint(candidates);
+                switch (i)
+                {
+                case 0:
+                    candidates &= (~SOUTH);
+                    break;
+                case 1:
+                    candidates &= (~(SOUTH | EAST));
+                    break;
+                case 2:
+                    candidates &= (~EAST);
+                    break;
+                case 3:
+                    candidates &= (~(SOUTH | WEST));
+                    break;
+                case 4:
+                    candidates &= (~NORTH);
+                    break;
+                case 5:
+                    candidates &= (~(NORTH | WEST));
+                    break;
+                case 6:
+                    candidates &= (~WEST);
+                    break;
+                case 7:
+                    candidates &= (~(NORTH | EAST));
+                    break;
+                default:
+                    break;
+                }
             }
         }
         // std::cout << std::bitset<64>(moves).to_string() << std::endl;

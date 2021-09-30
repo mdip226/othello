@@ -26,6 +26,7 @@ uint64_t get_legal_moves(uint64_t player, uint64_t opponent) {
         }
         if (i < 4)
         {
+            // i think need direction masks
             candidates = opponent & (player >> shift);
             while (candidates != 0)
             {

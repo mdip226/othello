@@ -21,6 +21,17 @@ int main(int argc, char const *argv[])
     u64 black = init_black();
     tuple<u64, u64> board;
     print_board(black, white);
+    // print_board(0x0000003820e00000, 0x00000000d8000000);
+    // print_legal_moves(0x0000003820e00000, 0x00000000d8000000, false);
+        // print_uint(NORTH);
+        // print_uint(NORTH);
+        // print_uint(SOUTH);
+        // print_uint(EAST);
+        // print_uint(WEST);
+        // print_uint(NORTH|EAST);
+        // print_uint(NORTH|WEST);
+        // print_uint(SOUTH|EAST);
+        // print_uint(SOUTH|WEST);
     bool isBlack;
     for (string input; getline(cin, input);) {
         if (!input.compare("I B")) {
@@ -28,17 +39,17 @@ int main(int argc, char const *argv[])
             isBlack = true;
             board = make_tuple(black, white);
             // board.white;
-            cout << "C initialize as black" << endl;
+            cout << "C initialize AI as black" << endl;
         }
         if (!input.compare("I W")) {
             //initialize AI as white
             isBlack = false;
             board = make_tuple(white, black);
-            cout << "C initialize as white" << endl;
+            cout << "C initialize AI as white" << endl;
         }
         if (!input.compare(0, 1, "B")) {
             if (input.length()==1) {
-                cout << "Black passes." << endl;
+                cout << "C Black passes." << endl;
             }
             else {
                 char col = input[2];
@@ -77,19 +88,19 @@ int main(int argc, char const *argv[])
             cout << "C " << n << endl;
         }
         if (isBlack) {
-            cout << "possible black (AI) moves:" << endl;
-            print_legal_moves(get<OPPONENT>(board), get<AI>(board));
+            cout << "C possible black (AI) moves:" << endl;
+            print_legal_moves(get<AI>(board), get<OPPONENT>(board), isBlack);
             u64 possible_moves = get_legal_moves(get<AI>(board), get<OPPONENT>(board));
             u64 move = pick_randomly(possible_moves);
             if ((possible_moves & move) == 0UL) {
-                cout << "ERROR IN either get_legal_moves() or pick_randomly()";
+                cout << "C ERROR IN either get_legal_moves() or pick_randomly()";
             }
-            cout << "possible_chosen:" << endl;
+            cout << "C possible_chosen:" << endl;
             print_uint(move);
             board = play(move, get<AI>(board), get<OPPONENT>(board), isBlack);
             print_board(get<AI>(board), get<OPPONENT>(board));
             cout << "C Your possible_moves:" << endl;
-            print_legal_moves(get<OPPONENT>(board), get<AI>(board));
+            print_legal_moves(get<AI>(board), get<OPPONENT>(board), false);
         }else {
             print_board(get<AI>(board), get<OPPONENT>(board));
         }

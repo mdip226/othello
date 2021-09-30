@@ -10,5 +10,7 @@ int bitCount(u64 bits);
 
 u64 pick_randomly(u64 moves);
 
+bool is_legal(u64 move, u64 legal_moves);
+
 #endif // MOVES_H
 

@@ -2,13 +2,16 @@
 #include <iostream>
 #include <bitset>
 #include "debug.h"
+#include "utils.h"
 
-uint64_t get_legal_moves(uint64_t player, uint64_t opponent) {
-    uint64_t full = player | opponent;
-    uint64_t mask = 0b0000000000000000000000000000000000000000000000000000000000000000;
-    uint64_t empty = (~full) & (~mask);
-    uint64_t moves = 0b0000000000000000000000000000000000000000000000000000000000000000;
-    uint64_t candidates;
+int shifts[] = {1,-1};
+
+u64 get_legal_moves(u64 player, u64 opponent) {
+    u64 full = player | opponent;
+    u64 mask = 0b0000000000000000000000000000000000000000000000000000000000000000;
+    u64 empty = (~full) & (~mask);
+    u64 moves = 0b0000000000000000000000000000000000000000000000000000000000000000;
+    u64 candidates;
     int cols = 8;
     for (int i = 0; i < 8; ++i)
     {
@@ -182,8 +185,8 @@ uint64_t get_legal_moves(uint64_t player, uint64_t opponent) {
     return moves;
 }
 
-int bitCount(uint64_t bits) {
-    uint64_t print_mask = 0x8000000000000000;
+int bitCount(u64 bits) {
+    u64 print_mask = 0x8000000000000000;
     // std::cout << std::bitset<64>(bits).to_string() << std::endl;
     // std::cout << std::bitset<64>(print_mask).to_string() << std::endl;
     int count = 0;
@@ -196,12 +199,12 @@ int bitCount(uint64_t bits) {
     return count;
 }
 
-uint64_t pick_randomly(uint64_t moves) {
+u64 pick_randomly(u64 moves) {
     int num_moves = bitCount(moves);
     srand(time(NULL));
     int choice = rand() % num_moves + 1;
     int scan = 0;
-    uint64_t mask = 0x8000000000000000;
+    u64 mask = 0x8000000000000000;
     int position;
     for (int i = 0; i < 64; ++i)
     {
@@ -216,4 +219,8 @@ uint64_t pick_randomly(uint64_t moves) {
         moves <<= 1;
     }
     return mask >> position;
+}
+
+bool is_legal(u64 move, u64 legal_moves) {
+    return (move & legal_moves) != 0UL;
 }

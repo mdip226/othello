@@ -3,12 +3,13 @@
 #include <iostream> //debug
 #include "utils.h"
 #include "debug.h"
+#include "moves.h"
 u64 _make_move(u64 move, u64 board)
 {
     return move | board;
 }
 
-std::tuple<u64, u64> play(u64 move, u64 player, u64 opponent, bool isBlack) {
+std::tuple<u64, u64> play(u64 move, u64 player, u64 opponent, bool isAI) {
     // dont forget to check whether it is a legal move or not....
     // TODO: need to add & with empty spaces somewhere in algorithm!
     // ACTUALLY i think we just need to check for the edge on that first adjacent piece and stop there
@@ -103,10 +104,17 @@ std::tuple<u64, u64> play(u64 move, u64 player, u64 opponent, bool isBlack) {
 
     opponent = (~flips_final) & opponent;
     player |= flips_final;
-    if (isBlack) {
-        return std::tie(player, opponent);
+    if (isAI) {
+        return std::make_tuple(player, opponent);
     }
     else {
-        return std::tie(opponent, player);
+        return std::make_tuple(opponent, player);
     }
+}
+
+bool is_end(u64 player, u64 opponent) {
+    u64 player_moves = get_legal_moves(player, opponent);
+    u64 opponent_moves = get_legal_moves(opponent, player);
+    u64 mask = 0xffffffffffffffff;
+    return (((player_moves & mask) == 0UL) & ((opponent_moves & mask) == 0UL) == 0UL);
 }

@@ -18,8 +18,41 @@ std::tuple<u64, u64> play(u64 move, u64 player, u64 opponent, bool isBlack) {
 
     u64 candidate;
     int cols = 8;
+    // when i = ... direction
+    // 0 = south
+    // 1 = southeast
+    // 2 = east
+    // 3 = southwest
+    // 4 = north
+    // 5 = northwest
+    // 6 = west
+    // 7 = northeast
     for (int i = 0; i < 8; ++i)
-    {
+    { 
+        if (i == 0 && (move & SOUTH2) != 0UL) {
+            continue;
+        }
+        if (i == 1 && (move & (SOUTH2|EAST2)) != 0UL) {
+            continue;
+        }
+        if (i == 2 && (move & EAST2) != 0UL) {
+            continue;
+        }
+        if (i == 3 && (move & (SOUTH2|WEST2)) != 0UL) {
+            continue;
+        }
+        if (i == 4 && (move & NORTH2) != 0UL) {
+            continue;
+        }
+        if (i == 5 && (move & (NORTH2|WEST2)) != 0UL) {
+            continue;
+        }
+        if (i == 6 && (move & WEST2) != 0UL) {
+            continue;
+        }
+        if (i == 7 && (move & (NORTH2|EAST2)) != 0UL) {
+            continue;
+        }
         int shift = 1;
         if (i != 2 && i != 6)
         {

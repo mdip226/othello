@@ -2,10 +2,11 @@
 #define DEBUG_H
 
 #include <cstdint>
+#include "utils.h"
 
-void print_board(uint64_t black, uint64_t white);
-void print_legal_moves(uint64_t player, uint64_t opponent);
-void print_uint(uint64_t bits);
+void print_board(u64 black, u64 white);
+void print_legal_moves(u64 black, u64 white, bool isBlack);
+void print_uint(u64 bits);
 
 #endif // DEBUG_H
 

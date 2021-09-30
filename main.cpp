@@ -20,18 +20,19 @@ int main(int argc, char const *argv[])
     u64 white = init_white();
     u64 black = init_black();
     tuple<u64, u64> board;
+    // print_uint(~(NORTH | EAST));
     print_board(black, white);
-    // print_board(0x0000003820e00000, 0x00000000d8000000);
-    // print_legal_moves(0x0000003820e00000, 0x00000000d8000000, false);
-        // print_uint(NORTH);
-        // print_uint(NORTH);
-        // print_uint(SOUTH);
-        // print_uint(EAST);
-        // print_uint(WEST);
-        // print_uint(NORTH|EAST);
-        // print_uint(NORTH|WEST);
-        // print_uint(SOUTH|EAST);
-        // print_uint(SOUTH|WEST);
+    // print_board(0x20001e1c18040000, 0x1f3f010301000000);
+    // print_legal_moves(0x20001e1c18040000, 0x1f3f010301000000, false);
+    // print_uint(NORTH);
+    // print_uint(NORTH);
+    // print_uint(SOUTH);
+    // print_uint(EAST);
+    // print_uint(WEST);
+    // print_uint(NORTH|EAST);
+    // print_uint(NORTH|WEST);
+    // print_uint(SOUTH|EAST);
+    // print_uint(SOUTH|WEST);
     bool isBlack;
     for (string input; getline(cin, input);) {
         if (!input.compare("I B")) {

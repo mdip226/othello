@@ -1,4 +1,9 @@
 #include <cstdint>
+//
+// #define NORTH 0xFFFF000000000000UL
+// #define EAST 0x0303030303030303UL
+// #define SOUTH 0x000000000000FFFFUL
+// #define WEST 0xC0C0C0C0C0C0C0C0UL
 
 uint64_t col_row_to_bit(char col, int row)
 {

@@ -9,6 +9,12 @@ all: $(TARGET)
 $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
 
+test: test.o debug.o moves.o actions.o utils.o
+	g++ -o test test.o debug.o moves.o actions.o utils.o
+
+test.o: test.cpp
+	$(CC) $(CFLAGS) -c test.cpp
+
 clean:
 	rm -f $(OBJS)
 

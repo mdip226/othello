@@ -60,7 +60,6 @@ void print_legal_moves(u64 black, u64 white, bool isBlack)
 
     u64 moves;
     if (isBlack) {
-        std::cout << "hi" << std::endl;
         moves = get_legal_moves(black, white);
     }else {
         moves = get_legal_moves(white, black);

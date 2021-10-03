@@ -16,7 +16,7 @@ test.o: test.cpp
 	$(CC) $(CFLAGS) -c test.cpp
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) test.o
 
 clean_all:
 	rm -f $(TARGET)

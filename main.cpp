@@ -15,14 +15,22 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
+    bool isBlack;
+    bool isInteractive = false;
+    bool isFirstTurn = true;
+    bool playItself = false;
+    for (int i = 1; i <= argc; ++i) {
+        if (string(argv[i]) == "-s") {
+            playItself = true;
+        }
+        if (string(argv[i]) == "-i") {
+            isInteractive = true;
+        }
+    }
     u64 white = init_white();
     u64 black = init_black();
     tuple<u64, u64> board;
     print_board(black, white);
-    bool isBlack;
-    bool isInteractive;
-    bool isFirstTurn = true;
-    bool playItself = true;
 
     for (string input; getline(cin, input);) {
         if (!input.compare("I B")) {

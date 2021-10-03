@@ -15,13 +15,13 @@ u64 get_legal_moves(u64 player, u64 opponent) {
     u64 candidates;
     for (int i = 0; i < 8; ++i)
     {
-        std::cout << "C " << i << std::endl;
+        // std::cout << "C " << i << std::endl;
         if (i < 4)
         {
             // i think need direction masks
             candidates = opponent & ((player&(~dir_masks[i])) >> shifts[i]);
-            std::cout << "C candidates:" << std::endl;
-            print_uint(candidates);
+            // std::cout << "C candidates:" << std::endl;
+            // print_uint(candidates);
             while (candidates != 0) {
                 // std::cout << "C (candidates>>shift):" << std::endl;
                 // print_uint(candidates>>shift);
@@ -34,8 +34,8 @@ u64 get_legal_moves(u64 player, u64 opponent) {
             }
         } else {
             candidates = opponent & ((player&(~dir_masks[i])) << shifts[i]);
-            std::cout << "C candidates:" << std::endl;
-            print_uint(candidates);
+            // std::cout << "C candidates:" << std::endl;
+            // print_uint(candidates);
             while (candidates != 0)
             {
                 // std::cout << "C (candidates<<shift):" << std::endl;

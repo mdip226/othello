@@ -8,6 +8,23 @@ u64 _make_move(u64 move, u64 board)
 {
     return move | board;
 }
+void send_move(u64 move, bool isBlack) {
+    char cols[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'};
+    int rows[] = {1, 2, 3, 4, 5, 6, 7, 8};
+    char col;
+    int row;
+    char color = isBlack ? 'B' : 'W';
+    
+    u64 mask = 0x8000000000000000;
+    for (int i = 0; i < 8; ++i) {
+        for (int j = 0; j < 8; ++j) {
+            if ((mask & move) != 0UL) {
+                std::cout << color << " " << cols[j] << " " << rows[i] << std::endl;
+            }
+            move <<= 1;
+        }
+    }
+}
 
 std::tuple<u64, u64> play(u64 move, u64 player, u64 opponent, bool isAI) {
     // dont forget to check whether it is a legal move or not....
@@ -115,6 +132,10 @@ std::tuple<u64, u64> play(u64 move, u64 player, u64 opponent, bool isAI) {
 bool is_end(u64 player, u64 opponent) {
     u64 player_moves = get_legal_moves(player, opponent);
     u64 opponent_moves = get_legal_moves(opponent, player);
+    std::cout << "C is_end(): player moves, opponent moves:" << std::endl;
+    print_uint(player_moves);
+    print_uint(opponent_moves);
     u64 mask = 0xffffffffffffffff;
-    return (((player_moves & mask) == 0UL) & ((opponent_moves & mask) == 0UL) == 0UL);
+    return (player_moves | opponent_moves) == 0UL;
+    // return (((player_moves & mask) == 0UL) & ((opponent_moves & mask) == 0UL) == 0UL);
 }

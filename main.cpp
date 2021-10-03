@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
     bool isInteractive = false;
     bool isFirstTurn = true;
     bool playItself = false;
-    for (int i = 1; i <= argc; ++i) {
+    for (int i = 1; i < argc; ++i) {
         if (string(argv[i]) == "-s") {
             playItself = true;
         }
@@ -38,12 +38,16 @@ int main(int argc, char const *argv[])
             isBlack = true;
             board = make_tuple(black, white);
             cout << "C initializing AI as black" << endl;
+            cout << "R B" << endl;
+            // continue;
         }
         if (!input.compare("I W")) {
             //initialize AI as white
             isBlack = false;
             board = make_tuple(white, black);
             cout << "C initializing AI as white" << endl;
+            cout << "R W" << endl;
+            // continue;
         }
         if (!input.compare(0, 1, "B")) {
             if (input.length()==1) {
@@ -62,7 +66,11 @@ int main(int argc, char const *argv[])
                     print_board(get<OPPONENT>(board), get<AI>(board));
                 }else {
                     cout << "C Illegal Move:\nC B " << col << " " << row << endl;
-                    exit(1); 
+                    if (isInteractive) {
+                        continue;
+                    }else {
+                        exit(1); 
+                    }
                 }
                 isFirstTurn = false;
             }
@@ -87,10 +95,43 @@ int main(int argc, char const *argv[])
                 else
                 {
                     cout << "C Illegal Move:\nC W " << col << " " << row << endl;
-                    exit(1);
+                    if (isInteractive) {
+                        continue;
+                    }else {
+                        exit(1); 
+                    }
                 }
                 // print_board(get<AI>(board), get<OPPONENT>(board));
             }
+        }
+        if (!input.compare("") && isInteractive) {
+            u64 legal_moves = get_legal_moves(get<OPPONENT>(board), get<AI>(board));
+            if (legal_moves != 0UL) {
+                u64 move = pick_randomly(legal_moves);
+                bool isLegal = is_legal(move, legal_moves);
+                if (isLegal)
+                {
+                    if (isBlack) {
+                        // print_uint(get<OPPONENT>(board));
+                        // print_uint(get<AI>(board));
+                        board = play(move, get<OPPONENT>(board), get<AI>(board), false);
+                        // print_uint(get<OPPONENT>(board));
+                        // print_uint(get<AI>(board));
+                        print_board(get<AI>(board), get<OPPONENT>(board));
+                    }else {
+                        // print_uint(get<OPPONENT>(board));
+                        // print_uint(get<AI>(board));
+                        board = play(move, get<OPPONENT>(board), get<AI>(board), false);
+                        // print_uint(get<OPPONENT>(board));
+                        // print_uint(get<AI>(board));
+                        print_board(get<OPPONENT>(board), get<AI>(board));
+                    }
+                }
+                else {
+                    cout << "C ERROR in either get_legal_moves() or pick_randomly()";
+                }
+            }
+            isFirstTurn = false;
         }
         if (!input.compare(0, 1, "C")) {
             cout << "C comment...." << endl;
@@ -112,39 +153,68 @@ int main(int argc, char const *argv[])
                 countWhite = bitCount(get<AI>(board));
             }
             cout << countBlack << endl;
+            if (countBlack > countWhite) {
+                cout << "C Black Wins!" << endl;
+            }else if (countWhite > countBlack) {
+                cout << "C White Wins!" << endl;
+            }
+            exit(0);
         }
         else if (isBlack) {
-            // cout << "C possible black (AI) moves:" << endl;
-            // print_legal_moves(get<AI>(board), get<OPPONENT>(board), isBlack);
+            cout << "C possible black (AI) moves:" << endl;
+            print_legal_moves(get<AI>(board), get<OPPONENT>(board), isBlack);
             u64 legal_moves = get_legal_moves(get<AI>(board), get<OPPONENT>(board));
-            u64 move = pick_randomly(legal_moves);
-            bool isLegal = is_legal(move, legal_moves);
-            if (isLegal)
-            {
-                board = play(move, get<AI>(board), get<OPPONENT>(board), true);
+            if (legal_moves != 0UL) {
+                u64 move = pick_randomly(legal_moves);
+                bool isLegal = is_legal(move, legal_moves);
+                if (isLegal)
+                {
+                    board = play(move, get<AI>(board), get<OPPONENT>(board), true);
+                }
+                else {
+                    cout << "C ERROR in either get_legal_moves() or pick_randomly()";
+                }
+                if (!isInteractive) {
+                    send_move(move, isBlack);
+                }
+                // cout << "C possible_chosen:" << endl;
+                // print_uint(move);
+                print_board(get<AI>(board), get<OPPONENT>(board));
+                cout << "C Your possible_moves:" << endl;
+                print_legal_moves(get<AI>(board), get<OPPONENT>(board), false);
+            }else {
+                if (!isInteractive) {
+                    cout << "B" << endl;
+                }
             }
-            else {
-                cout << "C ERROR in either get_legal_moves() or pick_randomly()";
-            }
-            // cout << "C possible_chosen:" << endl;
-            // print_uint(move);
-            print_board(get<AI>(board), get<OPPONENT>(board));
-            cout << "C Your possible_moves:" << endl;
-            print_legal_moves(get<AI>(board), get<OPPONENT>(board), false);
         }else if (!isBlack && !isFirstTurn){
             // cout << "C !isBlack && !isFirstTurn" << endl;
             // print_board(get<OPPONENT>(board), get<AI>(board));
             u64 legal_moves = get_legal_moves(get<AI>(board), get<OPPONENT>(board));
-            u64 move = pick_randomly(legal_moves);
-            bool isLegal = is_legal(move, legal_moves);
-            if (isLegal) {
-                board = play(move, get<AI>(board), get<OPPONENT>(board), true);
+            cout << "C AI(white) possible_moves:" << endl;
+            print_legal_moves(get<OPPONENT>(board), get<AI>(board), false);
+            if (legal_moves != 0UL) {
+                u64 move = pick_randomly(legal_moves);
+                bool isLegal = is_legal(move, legal_moves);
+                if (isLegal) {
+                    board = play(move, get<AI>(board), get<OPPONENT>(board), true);
+                }else {
+                    cout << "C ERROR in either get_legal_moves() or pick_randomly()";
+                }
+                if (!isInteractive) {
+                    send_move(move, isBlack);
+                }
+                print_board(get<OPPONENT>(board), get<AI>(board));
+                cout << "C Your possible_moves:" << endl;
+                print_legal_moves(get<OPPONENT>(board), get<AI>(board), true);
             }else {
-                cout << "C ERROR in either get_legal_moves() or pick_randomly()";
+                if (!isInteractive) {
+                    cout << "W" << endl;
+                }
             }
-            print_board(get<OPPONENT>(board), get<AI>(board));
-            cout << "C Your possible_moves:" << endl;
-            print_legal_moves(get<OPPONENT>(board), get<AI>(board), true);
+        }
+        if (isInteractive) {
+            cout << "C Just Press enter to pick randomly." << endl;
         }
     }
     return 0;

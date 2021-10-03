@@ -4,180 +4,50 @@
 #include "debug.h"
 #include "utils.h"
 
-int shifts[] = {1,-1};
+int shifts[] = {1,7,8,9,1,7,8,9};
+u64 dir_masks[] = {EAST,SOUTH|WEST,SOUTH,SOUTH|EAST,WEST,NORTH|EAST,NORTH,NORTH|WEST};
 
 u64 get_legal_moves(u64 player, u64 opponent) {
     u64 full = player | opponent;
-    u64 mask = 0b0000000000000000000000000000000000000000000000000000000000000000;
+    u64 mask = 0UL;
     u64 empty = (~full) & (~mask);
-    u64 moves = 0b0000000000000000000000000000000000000000000000000000000000000000;
+    u64 moves = 0UL;
     u64 candidates;
-    int cols = 8;
     for (int i = 0; i < 8; ++i)
     {
-        // std::cout << "C " << i << std::endl;
-        int shift = 1;
-        if (i != 2 && i != 6)
-        {
-            shift = cols;
-        }
-        if (i == 1 || i == 5)
-        {
-            shift++;
-        }
-        if (i == 3 || i == 7)
-        {
-            shift--;
-        }
+        std::cout << "C " << i << std::endl;
         if (i < 4)
         {
             // i think need direction masks
-            candidates = opponent & (player >> shift);
-            switch (i)
-            {
-            case 0:
-                candidates &= (~SOUTH);
-                break;
-            case 1:
-                candidates &= (~(SOUTH|EAST));
-                break;
-            case 2:
-                candidates &= (~EAST);
-                break;
-            case 3:
-                candidates &= (~(SOUTH|WEST));
-                break;
-            case 4:
-                candidates &= (~NORTH);
-                break;
-            case 5:
-                candidates &= (~(NORTH|WEST));
-                break;
-            case 6:
-                candidates &= (~WEST);
-                break;
-            case 7:
-                candidates &= (~(NORTH|EAST));
-                break;
-            default:
-                break;
-            }
-            // std::cout << "C candidates:" << std::endl;
-            // print_uint(candidates);
-            while (candidates != 0)
-            {
+            candidates = opponent & ((player&(~dir_masks[i])) >> shifts[i]);
+            std::cout << "C candidates:" << std::endl;
+            print_uint(candidates);
+            while (candidates != 0) {
                 // std::cout << "C (candidates>>shift):" << std::endl;
                 // print_uint(candidates>>shift);
-                moves |= empty & (candidates >> shift);
+                moves |= empty & ((candidates&(~dir_masks[i])) >> shifts[i]);
                 // std::cout << "C moves:" << std::endl;
                 // print_uint(moves);
-                candidates = opponent & (candidates >> shift);
+                candidates = opponent & ((candidates&(~dir_masks[i])) >> shifts[i]);
                 // std::cout << "C candidates:" << std::endl;
                 // print_uint(candidates);
-                switch (i)
-                {
-                case 0:
-                    candidates &= (~SOUTH);
-                    break;
-                case 1:
-                    candidates &= (~(SOUTH | EAST));
-                    break;
-                case 2:
-                    candidates &= (~EAST);
-                    break;
-                case 3:
-                    candidates &= (~(SOUTH | WEST));
-                    break;
-                case 4:
-                    candidates &= (~NORTH);
-                    break;
-                case 5:
-                    candidates &= (~(NORTH | WEST));
-                    break;
-                case 6:
-                    candidates &= (~WEST);
-                    break;
-                case 7:
-                    candidates &= (~(NORTH | EAST));
-                    break;
-                default:
-                    break;
-                }
             }
-        }
-        else
-        {
-            switch (i)
-            {
-            case 0:
-                candidates &= (~SOUTH);
-                break;
-            case 1:
-                candidates &= (~(SOUTH | EAST));
-                break;
-            case 2:
-                candidates &= (~EAST);
-                break;
-            case 3:
-                candidates &= (~(SOUTH | WEST));
-                break;
-            case 4:
-                candidates &= (~NORTH);
-                break;
-            case 5:
-                candidates &= (~(NORTH | WEST));
-                break;
-            case 6:
-                candidates &= (~WEST);
-                break;
-            case 7:
-                candidates &= (~(NORTH | EAST));
-                break;
-            default:
-                break;
-            }
-            candidates = opponent & (player << shift);
-            // std::cout << "C candidates:" << std::endl;
-            // print_uint(candidates);
+        } else {
+            candidates = opponent & ((player&(~dir_masks[i])) << shifts[i]);
+            std::cout << "C candidates:" << std::endl;
+            print_uint(candidates);
             while (candidates != 0)
             {
                 // std::cout << "C (candidates<<shift):" << std::endl;
-                // print_uint(candidates<<shift);
-                moves |= empty & (candidates << shift);
+                // print_uint(candidates<<shifts[i]);
+                moves |= empty & ((candidates&(~dir_masks[i])) << shifts[i]);
                 // std::cout << "C moves:" << std::endl;
                 // print_uint(moves);
-                candidates = opponent & (candidates << shift);
+                candidates = opponent & ((candidates&(~dir_masks[i])) << shifts[i]);
                 // std::cout << "C candidates:" << std::endl;
                 // print_uint(candidates);
-                switch (i)
-                {
-                case 0:
-                    candidates &= (~SOUTH);
-                    break;
-                case 1:
-                    candidates &= (~(SOUTH | EAST));
-                    break;
-                case 2:
-                    candidates &= (~EAST);
-                    break;
-                case 3:
-                    candidates &= (~(SOUTH | WEST));
-                    break;
-                case 4:
-                    candidates &= (~NORTH);
-                    break;
-                case 5:
-                    candidates &= (~(NORTH | WEST));
-                    break;
-                case 6:
-                    candidates &= (~WEST);
-                    break;
-                case 7:
-                    candidates &= (~(NORTH | EAST));
-                    break;
-                default:
-                    break;
-                }
+                
+                
             }
         }
         // std::cout << std::bitset<64>(moves).to_string() << std::endl;

@@ -19,6 +19,7 @@ typedef uint64_t u64;
 // #define EAST 0x7F7F7F7F7F7F7F7FUL
 // #define NORTHEAST 0x7F7F7F7F7F7F7F00UL
 
+
 u64 col_row_to_bit(char col, int row);
 u64 init_black();
 u64 init_white();

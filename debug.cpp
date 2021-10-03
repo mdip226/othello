@@ -60,11 +60,12 @@ void print_legal_moves(u64 black, u64 white, bool isBlack)
 
     u64 moves;
     if (isBlack) {
+        std::cout << "hi" << std::endl;
         moves = get_legal_moves(black, white);
     }else {
         moves = get_legal_moves(white, black);
     }
-    u64 mask = 0b1000000000000000000000000000000000000000000000000000000000000000;
+    u64 mask = 0x8000000000000000;
     std::cout << "C   a b c d e f g h" << std::endl;
     for (int i = 0; i < 8; ++i)
     {

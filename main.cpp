@@ -22,6 +22,8 @@ int main(int argc, char const *argv[])
     bool isBlack;
     bool isInteractive;
     bool isFirstTurn = true;
+    bool playItself = true;
+
     for (string input; getline(cin, input);) {
         if (!input.compare("I B")) {
             //initialize AI as black

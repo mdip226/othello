@@ -1,4 +1,5 @@
 other/
 trash/
 *.o
-othello*
+othello
+test

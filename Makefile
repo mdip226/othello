@@ -1,10 +1,10 @@
 CC = g++
 CFLAGS = -Wall
 OBJS = main.o debug.o moves.o actions.o utils.o
-TARGET = othello
+TARGET = mdippelOthello
 
 all: $(TARGET)
-	g++ -o othello main.o debug.o moves.o actions.o utils.o
+	g++ -o $(TARGET) main.o debug.o moves.o actions.o utils.o
 
 $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS)

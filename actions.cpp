@@ -1,9 +1,9 @@
-#include <cstdint>
 #include <tuple>
-#include <iostream> //debug
+#include <iostream>
 #include "utils.h"
 #include "debug.h"
 #include "moves.h"
+
 u64 _make_move(u64 move, u64 board)
 {
     return move | board;
@@ -132,10 +132,8 @@ std::tuple<u64, u64> play(u64 move, u64 player, u64 opponent, bool isAI) {
 bool is_end(u64 player, u64 opponent) {
     u64 player_moves = get_legal_moves(player, opponent);
     u64 opponent_moves = get_legal_moves(opponent, player);
-    std::cout << "C is_end(): player moves, opponent moves:" << std::endl;
-    print_uint(player_moves);
-    print_uint(opponent_moves);
-    u64 mask = 0xffffffffffffffff;
+    // std::cout << "C is_end(): player moves, opponent moves:" << std::endl;
+    // print_uint(player_moves);
+    // print_uint(opponent_moves);
     return (player_moves | opponent_moves) == 0UL;
-    // return (((player_moves & mask) == 0UL) & ((opponent_moves & mask) == 0UL) == 0UL);
 }

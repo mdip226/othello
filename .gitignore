@@ -3,3 +3,4 @@ trash/
 *.o
 othello
 test
+*password

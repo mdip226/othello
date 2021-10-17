@@ -1,6 +1,6 @@
 other/
 trash/
 *.o
-othello
-test
+*othello
+*test
 *password

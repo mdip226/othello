@@ -20,7 +20,7 @@ void print_board(u64 black, u64 white) {
         }
         std::cout << "\n";
     }
-    std::cout << "\n";
+    std::cout << "C \n";
 }
 
 void print_uint(u64 bits) {
@@ -38,7 +38,7 @@ void print_uint(u64 bits) {
         }
         std::cout << "\n";
     }
-    std::cout << "\n";
+    std::cout << "C \n";
 }
 
 void print_legal_moves(u64 black, u64 white, bool isBlack) {
@@ -70,5 +70,5 @@ void print_legal_moves(u64 black, u64 white, bool isBlack) {
         }
         std::cout << "\n";
     }
-    std::cout << "\n";
+    std::cout << "C \n";
 }

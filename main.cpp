@@ -175,13 +175,14 @@ int main(int argc, char const *argv[])
                     cout << "C ERROR in either get_legal_moves() or pick_randomly()";
                 }
                 if (!isInteractive) {
+                    // print_legal_moves(get<AI>(board), get<OPPONENT>(board));
                     send_move(move, isBlack);
                 }
                 // cout << "C possible_chosen:" << endl;
                 // print_uint(move);
                 print_board(get<AI>(board), get<OPPONENT>(board));
-                cout << "C Your possible_moves:" << endl;
-                print_legal_moves(get<AI>(board), get<OPPONENT>(board), false);
+                // cout << "C Your possible_moves:" << endl;
+                // print_legal_moves(get<AI>(board), get<OPPONENT>(board), false);
             }else {
                 if (!isInteractive) {
                     cout << "B" << endl;
@@ -215,6 +216,24 @@ int main(int argc, char const *argv[])
         }
         if (isInteractive) {
             cout << "C Just Press enter to pick randomly." << endl;
+        }
+        isEnd = is_end(get<AI>(board), get<OPPONENT>(board));
+        if (isEnd) {
+            int countBlack, countWhite;
+            if (isBlack) {
+                countBlack = bitCount(get<AI>(board));
+                countWhite = bitCount(get<OPPONENT>(board));
+            }else {
+                countBlack = bitCount(get<OPPONENT>(board));
+                countWhite = bitCount(get<AI>(board));
+            }
+            cout << countBlack << endl;
+            if (countBlack > countWhite) {
+                cout << "C Black Wins!" << endl;
+            }else if (countWhite > countBlack) {
+                cout << "C White Wins!" << endl;
+            }
+            exit(0);
         }
     }
     return 0;

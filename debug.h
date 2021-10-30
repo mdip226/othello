@@ -3,6 +3,8 @@
 
 #include "utils.h"
 
+#define DEBUG 1
+
 // prints out board state
 void print_board(u64 black, u64 white);
 

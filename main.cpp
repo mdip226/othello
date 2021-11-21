@@ -31,13 +31,16 @@ int main(int argc, char const *argv[])
     print_board(black, white);
 
     for (string input; getline(cin, input);) {
+        // ignore comments
         if (!input.compare(0, 1, "C")) {
             continue;
         }
+        // initialize self as black, then play
         if (!input.compare("I B")) {
             board = I_B();
             isBlack = true;
         }
+        // initialize self as white, then wait for black to play
         if (!input.compare("I W")) {
             board = I_W();
             isBlack = false;
@@ -50,36 +53,38 @@ int main(int argc, char const *argv[])
                 print_board(std::get<OPPONENT>(board), std::get<AI>(board));
             }
         }
+        // Opponent as black, update board state with their move, or do nothing if they pass
         if (!input.compare(0, 1, "B")) {
             if (input.length() == 1) {
                 passB();
-            }
-            else {
+            }else {
                 board = playB(input, board);
             }
         }
+        // Opponent as white, update board state with their move, or do nothing if they pass
         if (!input.compare(0, 1, "W")) {
             if (input.length()==1) {
                 passW();
-            }
-            else {
+            }else {
                 board = playW(input, board);
             }
         }
-        
-        stringstream sstream(input);
-        int n;
-        if (!(sstream >> n).fail()) {
-            cout << "C " << n << endl;
-            exit(0);
-        }
+// pretty sure we don't need this        
+        // stringstream sstream(input);
+        // int n;
+        // if (!(sstream >> n).fail()) {
+        //     cout << "C " << n << endl;
+        //     exit(0);
+        // }
+
+        // check for endgame
         bool isEnd = is_end(get<AI>(board), get<OPPONENT>(board));
-        if (isEnd) {
-            end_of_game(board, isBlack);
-        }
-        else {
+        // otherwise, make my move
+        if (!isEnd) {
             board = playSelf(board, isBlack);
         }
+
+        // TODO cleanup
         if (!input.compare("") && isInteractive) {
             u64 legal_moves = get_legal_moves(get<OPPONENT>(board), get<AI>(board));
             if (legal_moves != 0UL) {
@@ -94,8 +99,7 @@ int main(int argc, char const *argv[])
                         board = play(move, get<OPPONENT>(board), get<AI>(board), false);
                         print_board(get<OPPONENT>(board), get<AI>(board));
                     }
-                }
-                else {
+                }else {
                     cout << "C ERROR in either get_legal_moves() or pick_randomly()";
                 }
             }
@@ -103,24 +107,6 @@ int main(int argc, char const *argv[])
         }
         if (isInteractive) {
             cout << "C Just Press enter to pick randomly." << endl;
-        }
-        isEnd = is_end(get<AI>(board), get<OPPONENT>(board));
-        if (isEnd) {
-            int countBlack, countWhite;
-            if (isBlack) {
-                countBlack = bitCount(get<AI>(board));
-                countWhite = bitCount(get<OPPONENT>(board));
-            }else {
-                countBlack = bitCount(get<OPPONENT>(board));
-                countWhite = bitCount(get<AI>(board));
-            }
-            cout << countBlack << endl;
-            if (countBlack > countWhite) {
-                cout << "C Black Wins!" << endl;
-            }else if (countWhite > countBlack) {
-                cout << "C White Wins!" << endl;
-            }
-            exit(0);
         }
     }
     return 0;

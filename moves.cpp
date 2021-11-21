@@ -4,10 +4,10 @@
 #include "debug.h"
 #include "utils.h"
 
-int shifts[] = {1,7,8,9,1,7,8,9};
-u64 dir_masks[] = {EAST,SOUTH|WEST,SOUTH,SOUTH|EAST,WEST,NORTH|EAST,NORTH,NORTH|WEST};
 
 u64 get_legal_moves(u64 player, u64 opponent) {
+    int shifts[] = {1,7,8,9,1,7,8,9};
+    u64 dir_masks[] = {EAST,SOUTH|WEST,SOUTH,SOUTH|EAST,WEST,NORTH|EAST,NORTH,NORTH|WEST};
     u64 full = player | opponent;
     u64 mask = 0UL;
     u64 empty = (~full) & (~mask);

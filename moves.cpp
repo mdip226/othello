@@ -16,6 +16,10 @@ u64 get_legal_moves(u64 player, u64 opponent) {
     for (int i = 0; i < 8; ++i)
     {
         // std::cout << "C " << i << std::endl;
+        // std::cout << "C player:" << std::endl;
+        // print_uint(player);
+        // std::cout << "C opponent:" << std::endl;
+        // print_uint(opponent);
         if (i < 4)
         {
             // i think need direction masks
@@ -23,12 +27,14 @@ u64 get_legal_moves(u64 player, u64 opponent) {
             // std::cout << "C candidates:" << std::endl;
             // print_uint(candidates);
             while (candidates != 0) {
-                // std::cout << "C (candidates>>shift):" << std::endl;
-                // print_uint(candidates>>shift);
-                moves |= empty & ((candidates&(~dir_masks[i])) >> shifts[i]);
+                // std::cout << "C (candidates>>shifts[i]):" << std::endl;
+                candidates = ((candidates&(~dir_masks[i])) >> shifts[i]);
+                // print_uint(candidates);
+                moves |= empty & candidates;
                 // std::cout << "C moves:" << std::endl;
                 // print_uint(moves);
-                candidates = opponent & ((candidates&(~dir_masks[i])) >> shifts[i]);
+                // candidates = ((candidates&(~dir_masks[i])) >> shifts[i]);
+                candidates = opponent & candidates;
                 // std::cout << "C candidates:" << std::endl;
                 // print_uint(candidates);
             }
@@ -38,19 +44,20 @@ u64 get_legal_moves(u64 player, u64 opponent) {
             // print_uint(candidates);
             while (candidates != 0)
             {
-                // std::cout << "C (candidates<<shift):" << std::endl;
-                // print_uint(candidates<<shifts[i]);
-                moves |= empty & ((candidates&(~dir_masks[i])) << shifts[i]);
+                // std::cout << "C (candidates<<shifts[i]):" << std::endl;
+                candidates = ((candidates&(~dir_masks[i])) << shifts[i]);
+                // print_uint(candidates);
+                moves |= empty & candidates;
                 // std::cout << "C moves:" << std::endl;
                 // print_uint(moves);
-                candidates = opponent & ((candidates&(~dir_masks[i])) << shifts[i]);
+                //  candidates = ((candidates&(~dir_masks[i])) >> shifts[i]);
+                candidates = opponent & candidates;
                 // std::cout << "C candidates:" << std::endl;
                 // print_uint(candidates);
                 
                 
             }
         }
-        // std::cout << std::bitset<64>(moves).to_string() << std::endl;
     }
     return moves;
 }

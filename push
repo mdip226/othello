@@ -1,0 +1,2 @@
+#!/bin/sh
+sshpass -f "/home/mdip/unca/csci312/othello/password" scp -v *.cpp *.h Makefile mdippel@arden.cs.unca.edu:~/othello/othello

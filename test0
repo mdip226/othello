@@ -1,0 +1,76 @@
+(C moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - - - - - - ).
+mdippelOthello(Black): (C 5 - - - - - - - - ).
+mdippelOthello(Black): (C 6 - - - - - - X - ).
+mdippelOthello(Black): (C 7 X - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - X - - - ).
+mdippelOthello(Black): (C ).
+
+B g6
+
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B B W W W W W W * 
+Referee:  2 * B B W W W W W W * 
+Referee:  3 * B B W W W B B W * 
+Referee:  4 * B W W W W B W W * 
+Referee:  5 * B B B B B B B W * 
+Referee:  6 * B B W B B B - W * 
+Referee:  7 * - W W W W B B W * 
+Referee:  8 * W W W W - B B - * 
+Referee:   ******************** 
+
+
+mdippelOthello(Black): (B h 6).
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - B W W W W W W * 
+Referee:  2 * B B W W W W B W * 
+Referee:  3 * B B W W W W B W * 
+Referee:  4 * B B W W B W W W * 
+Referee:  5 * B B W B W W W W * 
+Referee:  6 * B B B W B B B - * 
+Referee:  7 * B B B B B B - - * 
+Referee:  8 * B - B W B - - - * 
+Referee:   ******************** 
+
+
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - B W W W W W W ).
+mdippelOthello(Black): (C 2 B W W W W W W W ).
+mdippelOthello(Black): (C 3 B B B B B W B W ).
+mdippelOthello(Black): (C 4 B W W W W B B W ).
+mdippelOthello(Black): (C 5 B B W W W B B - ).
+mdippelOthello(Black): (C 6 B B B W B B B - ).
+mdippelOthello(Black): (C 7 B B B B B B - - ).
+mdippelOthello(Black): (C 8 B - B W B - - - ).
+mdippelOthello(Black): (C ).
+
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 @ B W W W W W W ).
+mdippelOthello(Black): (C 2 B W W W W W W W ).
+mdippelOthello(Black): (C 3 B B B B B W B W ).
+mdippelOthello(Black): (C 4 B W W W W B B W ).
+mdippelOthello(Black): (C 5 B B W W W B B @ ).
+mdippelOthello(Black): (C 6 B B B W B B B @ ).
+mdippelOthello(Black): (C 7 B B B B B B @ @ ).
+mdippelOthello(Black): (C 8 B @ B W B @ @ - ).
+
+
+mdippelOthello(Black): (B g 8).
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * W W W W W W W W * 
+Referee:  2 * W W B B W W W W * 
+Referee:  3 * W W B W W W W W * 
+Referee:  4 * W B W W B B W W * 
+Referee:  5 * W W B B W B W W * 
+Referee:  6 * W W W W W W B W * 
+Referee:  7 * B W B B B B B B * 
+Referee:  8 * W W W W W W - - * 
+Referee:   ******************** 
+

@@ -26,9 +26,15 @@ u64 _alphaBeta(std::tuple<u64, u64> board, int ply, int player, int alpha, int b
         if (moveList.size() == 0) {
             moveList.push_back(0UL);
         }
+        u64 bestMove = moveList[0];
         for (int i = 0; i < moveList.size(); ++i) {
-            std::tuple<u64, u64> newBoard = play(moveList[i], std::get<AI>(board), std::get<OPPONENT>(board), true);
-
+            std::tuple<u64, u64> newBoard;
+            if (player > 1) {
+                newBoard = play(moveList[i], std::get<AI>(board), std::get<OPPONENT>(board), true);
+            }else {
+                newBoard = play(moveList[i], std::get<OPPONENT>(board), std::get<AI>(board), false);
+            }
+            u64 tempMove = _alphaBeta(newBoard, ply+1, -player, -beta, -alpha, maxDepth);
         }
     }
     return 0;

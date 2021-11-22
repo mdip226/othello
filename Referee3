@@ -1,0 +1,18 @@
+#!/bin/bash
+export PATH=".:$PATH"
+code="0"
+if [[ "$1" = DrMec* ]];
+  then
+    let code=$code+2 
+fi
+if [[ "$2" = DrMec* ]];
+  then
+   let code=$code+1 
+fi
+
+if [[ "$3" = "" ]];
+  then
+    java -jar Referee2013.jar $1 $2 600 LogFiles $code
+  else
+    java -jar Referee2013.jar $1 $2 600 LogFiles/$3 $code
+fi

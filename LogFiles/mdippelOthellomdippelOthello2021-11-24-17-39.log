@@ -1,0 +1,1423 @@
+mdippelOthello(Black) : (C   a b c d e f g h)
+mdippelOthello(Black) : (C 1 - - - - - - - - )
+mdippelOthello(Black) : (C 2 - - - - - - - - )
+mdippelOthello(Black) : (C 3 - - - - - - - - )
+mdippelOthello(Black) : (C 4 - - - W B - - - )
+mdippelOthello(Black) : (C 5 - - - B W - - - )
+mdippelOthello(Black) : (C 6 - - - - - - - - )
+mdippelOthello(Black) : (C 7 - - - - - - - - )
+mdippelOthello(Black) : (C 8 - - - - - - - - )
+mdippelOthello(Black) : (C )
+mdippelOthello(Black) : (C ..............Initializing SELF as black)
+Referee: Initialized mdippelOthello as Black.
+mdippelOthello(White) : (C   a b c d e f g h)
+mdippelOthello(White) : (C 1 - - - - - - - - )
+mdippelOthello(White) : (C 2 - - - - - - - - )
+mdippelOthello(White) : (C 3 - - - - - - - - )
+mdippelOthello(White) : (C 4 - - - W B - - - )
+mdippelOthello(White) : (C 5 - - - B W - - - )
+mdippelOthello(White) : (C 6 - - - - - - - - )
+mdippelOthello(White) : (C 7 - - - - - - - - )
+mdippelOthello(White) : (C 8 - - - - - - - - )
+mdippelOthello(White) : (C )
+mdippelOthello(White) : (C ..............Initializing SELF as white)
+Referee: Initialized mdippelOthello as White.
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - W B - - - ).
+mdippelOthello(Black): (C 5 - - - B W - - - ).
+mdippelOthello(Black): (C 6 - - - - - - - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............Possible Black (Self) moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - @ - - - - ).
+mdippelOthello(Black): (C 4 - - @ W B - - - ).
+mdippelOthello(Black): (C 5 - - - B W @ - - ).
+mdippelOthello(Black): (C 6 - - - - @ - - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............possible_chosen:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - - - - - - ).
+mdippelOthello(Black): (C 5 - - - - - - - - ).
+mdippelOthello(Black): (C 6 - - - - X - - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - W B - - - ).
+mdippelOthello(Black): (C 5 - - - B B - - - ).
+mdippelOthello(Black): (C 6 - - - - B - - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............White (Opponent) possible_moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - W B @ - - ).
+mdippelOthello(Black): (C 5 - - - B B - - - ).
+mdippelOthello(Black): (C 6 - - - @ B @ - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (B e 6).
+Referee Move # 0: (B e 6) .... Black(mdippelOthello) 336ms 599664ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - - W B - - - * 
+Referee:  5 * - - - B B - - - * 
+Referee:  6 * - - - - B - - - * 
+Referee:  7 * - - - - - - - - * 
+Referee:  8 * - - - - - - - - * 
+Referee:   ******************** 
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - W B - - - ).
+mdippelOthello(White): (C 5 - - - B W - - - ).
+mdippelOthello(White): (C 6 - - - - - - - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Black(opponent) to e 6).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - - - - - - ).
+mdippelOthello(White): (C 5 - - - - - - - - ).
+mdippelOthello(White): (C 6 - - - - X - - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............legal_moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - X - - - - ).
+mdippelOthello(White): (C 4 - - X - - - - - ).
+mdippelOthello(White): (C 5 - - - - - X - - ).
+mdippelOthello(White): (C 6 - - - - X - - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............isLegalMove!).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - W B - - - ).
+mdippelOthello(White): (C 5 - - - B B - - - ).
+mdippelOthello(White): (C 6 - - - - B - - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Possible White (Self) moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - W B @ - - ).
+mdippelOthello(White): (C 5 - - - B B - - - ).
+mdippelOthello(White): (C 6 - - - @ B @ - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............possible_chosen:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - - - - - - ).
+mdippelOthello(White): (C 5 - - - - - - - - ).
+mdippelOthello(White): (C 6 - - - - - X - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - W B - - - ).
+mdippelOthello(White): (C 5 - - - B W - - - ).
+mdippelOthello(White): (C 6 - - - - B W - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Black (Opponent) possible_moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - @ - - - - ).
+mdippelOthello(White): (C 4 - - @ W B - - - ).
+mdippelOthello(White): (C 5 - - - B W @ - - ).
+mdippelOthello(White): (C 6 - - - - B W @ - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (W f 6).
+Referee Move # 1: (W f 6) .... White(mdippelOthello) 645ms 599355ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - - W B - - - * 
+Referee:  5 * - - - B W - - - * 
+Referee:  6 * - - - - B W - - * 
+Referee:  7 * - - - - - - - - * 
+Referee:  8 * - - - - - - - - * 
+Referee:   ******************** 
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - W B - - - ).
+mdippelOthello(Black): (C 5 - - - B B - - - ).
+mdippelOthello(Black): (C 6 - - - - B - - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............White(opponent) to f 6).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - - - - - - ).
+mdippelOthello(Black): (C 5 - - - - - - - - ).
+mdippelOthello(Black): (C 6 - - - - - X - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............legal_moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - - - X - - ).
+mdippelOthello(Black): (C 5 - - - - - - - - ).
+mdippelOthello(Black): (C 6 - - - X - X - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............isLegalMove!).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - W B - - - ).
+mdippelOthello(Black): (C 5 - - - B W - - - ).
+mdippelOthello(Black): (C 6 - - - - B W - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............Possible Black (Self) moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - @ - - - - ).
+mdippelOthello(Black): (C 4 - - @ W B - - - ).
+mdippelOthello(Black): (C 5 - - - B W @ - - ).
+mdippelOthello(Black): (C 6 - - - - B W @ - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............possible_chosen:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - - - - - - ).
+mdippelOthello(Black): (C 5 - - - - - - - - ).
+mdippelOthello(Black): (C 6 - - - - - - X - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - W B - - - ).
+mdippelOthello(Black): (C 5 - - - B W - - - ).
+mdippelOthello(Black): (C 6 - - - - B B B - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............White (Opponent) possible_moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - @ - - - ).
+mdippelOthello(Black): (C 4 - - - W B @ - - ).
+mdippelOthello(Black): (C 5 - - @ B W - - - ).
+mdippelOthello(Black): (C 6 - - - @ B B B - ).
+mdippelOthello(Black): (C 7 - - - - @ - @ - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (B g 6).
+Referee Move # 2: (B g 6) .... Black(mdippelOthello) 1393ms 598271ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - - W B - - - * 
+Referee:  5 * - - - B W - - - * 
+Referee:  6 * - - - - B B B - * 
+Referee:  7 * - - - - - - - - * 
+Referee:  8 * - - - - - - - - * 
+Referee:   ******************** 
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - W B - - - ).
+mdippelOthello(White): (C 5 - - - B W - - - ).
+mdippelOthello(White): (C 6 - - - - B W - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Black(opponent) to g 6).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - - - - - - ).
+mdippelOthello(White): (C 5 - - - - - - - - ).
+mdippelOthello(White): (C 6 - - - - - - X - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............legal_moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - X - - - - ).
+mdippelOthello(White): (C 4 - - X - - - - - ).
+mdippelOthello(White): (C 5 - - - - - X - - ).
+mdippelOthello(White): (C 6 - - - - - - X - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............isLegalMove!).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - W B - - - ).
+mdippelOthello(White): (C 5 - - - B W - - - ).
+mdippelOthello(White): (C 6 - - - - B B B - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Possible White (Self) moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - @ - - - ).
+mdippelOthello(White): (C 4 - - - W B @ - - ).
+mdippelOthello(White): (C 5 - - @ B W - - - ).
+mdippelOthello(White): (C 6 - - - @ B B B - ).
+mdippelOthello(White): (C 7 - - - - @ - @ - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............possible_chosen:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - - - - - - ).
+mdippelOthello(White): (C 5 - - - - - - - - ).
+mdippelOthello(White): (C 6 - - - - - - - - ).
+mdippelOthello(White): (C 7 - - - - - - X - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - W B - - - ).
+mdippelOthello(White): (C 5 - - - B W - - - ).
+mdippelOthello(White): (C 6 - - - - B W B - ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Black (Opponent) possible_moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - @ - - - - ).
+mdippelOthello(White): (C 4 - - @ W B - - - ).
+mdippelOthello(White): (C 5 - - - B W @ - - ).
+mdippelOthello(White): (C 6 - - - - B W B - ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - - @ - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (W g 7).
+Referee Move # 3: (W g 7) .... White(mdippelOthello) 2559ms 596796ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - - W B - - - * 
+Referee:  5 * - - - B W - - - * 
+Referee:  6 * - - - - B W B - * 
+Referee:  7 * - - - - - - W - * 
+Referee:  8 * - - - - - - - - * 
+Referee:   ******************** 
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - W B - - - ).
+mdippelOthello(Black): (C 5 - - - B W - - - ).
+mdippelOthello(Black): (C 6 - - - - B B B - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............White(opponent) to g 7).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - - - - - - ).
+mdippelOthello(Black): (C 5 - - - - - - - - ).
+mdippelOthello(Black): (C 6 - - - - - - - - ).
+mdippelOthello(Black): (C 7 - - - - - - X - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............legal_moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - X - - - ).
+mdippelOthello(Black): (C 4 - - - - - X - - ).
+mdippelOthello(Black): (C 5 - - X - - - - - ).
+mdippelOthello(Black): (C 6 - - - X - - - - ).
+mdippelOthello(Black): (C 7 - - - - X - X - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............isLegalMove!).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - W B - - - ).
+mdippelOthello(Black): (C 5 - - - B W - - - ).
+mdippelOthello(Black): (C 6 - - - - B W B - ).
+mdippelOthello(Black): (C 7 - - - - - - W - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............Possible Black (Self) moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - @ - - - - ).
+mdippelOthello(Black): (C 4 - - @ W B - - - ).
+mdippelOthello(Black): (C 5 - - - B W @ - - ).
+mdippelOthello(Black): (C 6 - - - - B W B - ).
+mdippelOthello(Black): (C 7 - - - - - - W - ).
+mdippelOthello(Black): (C 8 - - - - - - @ - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............possible_chosen:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - X - - - - - ).
+mdippelOthello(Black): (C 5 - - - - - - - - ).
+mdippelOthello(Black): (C 6 - - - - - - - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - B B B - - - ).
+mdippelOthello(Black): (C 5 - - - B W - - - ).
+mdippelOthello(Black): (C 6 - - - - B W B - ).
+mdippelOthello(Black): (C 7 - - - - - - W - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............White (Opponent) possible_moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - @ - @ - - - ).
+mdippelOthello(Black): (C 4 - - B B B - - - ).
+mdippelOthello(Black): (C 5 - - @ B W - @ - ).
+mdippelOthello(Black): (C 6 - - - @ B W B @ ).
+mdippelOthello(Black): (C 7 - - - - @ - W - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (B c 4).
+Referee Move # 4: (B c 4) .... Black(mdippelOthello) 2468ms 595803ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - B B B - - - * 
+Referee:  5 * - - - B W - - - * 
+Referee:  6 * - - - - B W B - * 
+Referee:  7 * - - - - - - W - * 
+Referee:  8 * - - - - - - - - * 
+Referee:   ******************** 
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - W B - - - ).
+mdippelOthello(White): (C 5 - - - B W - - - ).
+mdippelOthello(White): (C 6 - - - - B W B - ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Black(opponent) to c 4).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - X - - - - - ).
+mdippelOthello(White): (C 5 - - - - - - - - ).
+mdippelOthello(White): (C 6 - - - - - - - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............legal_moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - X - - - - ).
+mdippelOthello(White): (C 4 - - X - - - - - ).
+mdippelOthello(White): (C 5 - - - - - X - - ).
+mdippelOthello(White): (C 6 - - - - - - - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - X - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............isLegalMove!).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - B B B - - - ).
+mdippelOthello(White): (C 5 - - - B W - - - ).
+mdippelOthello(White): (C 6 - - - - B W B - ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Possible White (Self) moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - @ - @ - - - ).
+mdippelOthello(White): (C 4 - - B B B - - - ).
+mdippelOthello(White): (C 5 - - @ B W - @ - ).
+mdippelOthello(White): (C 6 - - - @ B W B @ ).
+mdippelOthello(White): (C 7 - - - - @ - W - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............possible_chosen:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - - - - - - ).
+mdippelOthello(White): (C 5 - - - - - - - - ).
+mdippelOthello(White): (C 6 - - - - - - - X ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - B B B - - - ).
+mdippelOthello(White): (C 5 - - - B W - - - ).
+mdippelOthello(White): (C 6 - - - - B W W W ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Black (Opponent) possible_moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - B B B - - - ).
+mdippelOthello(White): (C 5 - - - B W @ - - ).
+mdippelOthello(White): (C 6 - - - - B W W W ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - - - @ ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (W h 6).
+Referee Move # 5: (W h 6) .... White(mdippelOthello) 5366ms 591430ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - B B B - - - * 
+Referee:  5 * - - - B W - - - * 
+Referee:  6 * - - - - B W W W * 
+Referee:  7 * - - - - - - W - * 
+Referee:  8 * - - - - - - - - * 
+Referee:   ******************** 
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - B B B - - - ).
+mdippelOthello(Black): (C 5 - - - B W - - - ).
+mdippelOthello(Black): (C 6 - - - - B W B - ).
+mdippelOthello(Black): (C 7 - - - - - - W - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............White(opponent) to h 6).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - - - - - - ).
+mdippelOthello(Black): (C 5 - - - - - - - - ).
+mdippelOthello(Black): (C 6 - - - - - - - X ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............legal_moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - X - X - - - ).
+mdippelOthello(Black): (C 4 - - - - - - - - ).
+mdippelOthello(Black): (C 5 - - X - - - X - ).
+mdippelOthello(Black): (C 6 - - - X - - - X ).
+mdippelOthello(Black): (C 7 - - - - X - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............isLegalMove!).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - B B B - - - ).
+mdippelOthello(Black): (C 5 - - - B W - - - ).
+mdippelOthello(Black): (C 6 - - - - B W W W ).
+mdippelOthello(Black): (C 7 - - - - - - W - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............Possible Black (Self) moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - B B B - - - ).
+mdippelOthello(Black): (C 5 - - - B W @ - - ).
+mdippelOthello(Black): (C 6 - - - - B W W W ).
+mdippelOthello(Black): (C 7 - - - - - - W - ).
+mdippelOthello(Black): (C 8 - - - - - - - @ ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............possible_chosen:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - - - - - - ).
+mdippelOthello(Black): (C 5 - - - - - X - - ).
+mdippelOthello(Black): (C 6 - - - - - - - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - B B B - - - ).
+mdippelOthello(Black): (C 5 - - - B B B - - ).
+mdippelOthello(Black): (C 6 - - - - B W W W ).
+mdippelOthello(Black): (C 7 - - - - - - W - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............White (Opponent) possible_moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - @ @ - - - - ).
+mdippelOthello(Black): (C 4 - - B B B @ - - ).
+mdippelOthello(Black): (C 5 - - - B B B - - ).
+mdippelOthello(Black): (C 6 - - - @ B W W W ).
+mdippelOthello(Black): (C 7 - - - - - - W - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (B f 5).
+Referee Move # 6: (B f 5) .... Black(mdippelOthello) 842ms 594961ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - B B B - - - * 
+Referee:  5 * - - - B B B - - * 
+Referee:  6 * - - - - B W W W * 
+Referee:  7 * - - - - - - W - * 
+Referee:  8 * - - - - - - - - * 
+Referee:   ******************** 
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - B B B - - - ).
+mdippelOthello(White): (C 5 - - - B W - - - ).
+mdippelOthello(White): (C 6 - - - - B W W W ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Black(opponent) to f 5).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - - - - - - ).
+mdippelOthello(White): (C 5 - - - - - X - - ).
+mdippelOthello(White): (C 6 - - - - - - - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............legal_moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - - - - - - ).
+mdippelOthello(White): (C 5 - - - - - X - - ).
+mdippelOthello(White): (C 6 - - - - - - - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - X ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............isLegalMove!).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - B B B - - - ).
+mdippelOthello(White): (C 5 - - - B B B - - ).
+mdippelOthello(White): (C 6 - - - - B W W W ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Possible White (Self) moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - @ @ - - - - ).
+mdippelOthello(White): (C 4 - - B B B @ - - ).
+mdippelOthello(White): (C 5 - - - B B B - - ).
+mdippelOthello(White): (C 6 - - - @ B W W W ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............possible_chosen:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - - - X - - ).
+mdippelOthello(White): (C 5 - - - - - - - - ).
+mdippelOthello(White): (C 6 - - - - - - - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - B B B W - - ).
+mdippelOthello(White): (C 5 - - - B B W - - ).
+mdippelOthello(White): (C 6 - - - - B W W W ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Black (Opponent) possible_moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - @ - ).
+mdippelOthello(White): (C 4 - - B B B W @ - ).
+mdippelOthello(White): (C 5 - - - B B W @ - ).
+mdippelOthello(White): (C 6 - - - - B W W W ).
+mdippelOthello(White): (C 7 - - - - - - W @ ).
+mdippelOthello(White): (C 8 - - - - - - - @ ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (W f 4).
+Referee Move # 7: (W f 4) .... White(mdippelOthello) 7565ms 583865ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - B B B W - - * 
+Referee:  5 * - - - B B W - - * 
+Referee:  6 * - - - - B W W W * 
+Referee:  7 * - - - - - - W - * 
+Referee:  8 * - - - - - - - - * 
+Referee:   ******************** 
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - B B B - - - ).
+mdippelOthello(Black): (C 5 - - - B B B - - ).
+mdippelOthello(Black): (C 6 - - - - B W W W ).
+mdippelOthello(Black): (C 7 - - - - - - W - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............White(opponent) to f 4).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - - - X - - ).
+mdippelOthello(Black): (C 5 - - - - - - - - ).
+mdippelOthello(Black): (C 6 - - - - - - - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............legal_moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - X X - - - - ).
+mdippelOthello(Black): (C 4 - - - - - X - - ).
+mdippelOthello(Black): (C 5 - - - - - - - - ).
+mdippelOthello(Black): (C 6 - - - X - - - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............isLegalMove!).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - B B B W - - ).
+mdippelOthello(Black): (C 5 - - - B B W - - ).
+mdippelOthello(Black): (C 6 - - - - B W W W ).
+mdippelOthello(Black): (C 7 - - - - - - W - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............Possible Black (Self) moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - @ - ).
+mdippelOthello(Black): (C 4 - - B B B W @ - ).
+mdippelOthello(Black): (C 5 - - - B B W @ - ).
+mdippelOthello(Black): (C 6 - - - - B W W W ).
+mdippelOthello(Black): (C 7 - - - - - - W @ ).
+mdippelOthello(Black): (C 8 - - - - - - - @ ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............possible_chosen:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - - - - - - ).
+mdippelOthello(Black): (C 5 - - - - - - - - ).
+mdippelOthello(Black): (C 6 - - - - - - - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - X ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - B B B W - - ).
+mdippelOthello(Black): (C 5 - - - B B W - - ).
+mdippelOthello(Black): (C 6 - - - - B B W W ).
+mdippelOthello(Black): (C 7 - - - - - - B - ).
+mdippelOthello(Black): (C 8 - - - - - - - B ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............White (Opponent) possible_moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - @ - - - - ).
+mdippelOthello(Black): (C 4 - @ B B B W - - ).
+mdippelOthello(Black): (C 5 - - @ B B W - - ).
+mdippelOthello(Black): (C 6 - - - @ B B W W ).
+mdippelOthello(Black): (C 7 - - - @ - @ B - ).
+mdippelOthello(Black): (C 8 - - - - - @ @ B ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (B h 8).
+Referee Move # 8: (B h 8) .... Black(mdippelOthello) 11175ms 583786ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - B B B W - - * 
+Referee:  5 * - - - B B W - - * 
+Referee:  6 * - - - - B B W W * 
+Referee:  7 * - - - - - - B - * 
+Referee:  8 * - - - - - - - B * 
+Referee:   ******************** 
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - B B B W - - ).
+mdippelOthello(White): (C 5 - - - B B W - - ).
+mdippelOthello(White): (C 6 - - - - B W W W ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Black(opponent) to h 8).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - - - - - - ).
+mdippelOthello(White): (C 5 - - - - - - - - ).
+mdippelOthello(White): (C 6 - - - - - - - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - X ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............legal_moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - X - ).
+mdippelOthello(White): (C 4 - - - - - - X - ).
+mdippelOthello(White): (C 5 - - - - - - X - ).
+mdippelOthello(White): (C 6 - - - - - - - - ).
+mdippelOthello(White): (C 7 - - - - - - - X ).
+mdippelOthello(White): (C 8 - - - - - - - X ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............isLegalMove!).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - B B B W - - ).
+mdippelOthello(White): (C 5 - - - B B W - - ).
+mdippelOthello(White): (C 6 - - - - B B W W ).
+mdippelOthello(White): (C 7 - - - - - - B - ).
+mdippelOthello(White): (C 8 - - - - - - - B ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Possible White (Self) moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - @ - - - - ).
+mdippelOthello(White): (C 4 - @ B B B W - - ).
+mdippelOthello(White): (C 5 - - @ B B W - - ).
+mdippelOthello(White): (C 6 - - - @ B B W W ).
+mdippelOthello(White): (C 7 - - - @ - @ B - ).
+mdippelOthello(White): (C 8 - - - - - @ @ B ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............possible_chosen:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - - - - - - ).
+mdippelOthello(White): (C 5 - - - - - - - - ).
+mdippelOthello(White): (C 6 - - - - - - - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - X - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - B B B W - - ).
+mdippelOthello(White): (C 5 - - - B B W - - ).
+mdippelOthello(White): (C 6 - - - - B B W W ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - - W B ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Black (Opponent) possible_moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - @ @ - ).
+mdippelOthello(White): (C 4 - - B B B W @ - ).
+mdippelOthello(White): (C 5 - - - B B W @ - ).
+mdippelOthello(White): (C 6 - - - - B B W W ).
+mdippelOthello(White): (C 7 - - - - - - W @ ).
+mdippelOthello(White): (C 8 - - - - - @ W B ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (W g 8).
+Referee Move # 9: (W g 8) .... White(mdippelOthello) 22921ms 560944ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - B B B W - - * 
+Referee:  5 * - - - B B W - - * 
+Referee:  6 * - - - - B B W W * 
+Referee:  7 * - - - - - - W - * 
+Referee:  8 * - - - - - - W B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - B B B W - - ).
+mdippelOthello(Black): (C 5 - - - B B W - - ).
+mdippelOthello(Black): (C 6 - - - - B B W W ).
+mdippelOthello(Black): (C 7 - - - - - - B - ).
+mdippelOthello(Black): (C 8 - - - - - - - B ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............White(opponent) to g 8).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - - - - - - ).
+mdippelOthello(Black): (C 5 - - - - - - - - ).
+mdippelOthello(Black): (C 6 - - - - - - - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - X - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............legal_moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - X - - - - ).
+mdippelOthello(Black): (C 4 - X - - - - - - ).
+mdippelOthello(Black): (C 5 - - X - - - - - ).
+mdippelOthello(Black): (C 6 - - - X - - - - ).
+mdippelOthello(Black): (C 7 - - - X - X - - ).
+mdippelOthello(Black): (C 8 - - - - - X X - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............isLegalMove!).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - B B B W - - ).
+mdippelOthello(Black): (C 5 - - - B B W - - ).
+mdippelOthello(Black): (C 6 - - - - B B W W ).
+mdippelOthello(Black): (C 7 - - - - - - W - ).
+mdippelOthello(Black): (C 8 - - - - - - W B ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............Possible Black (Self) moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - @ @ - ).
+mdippelOthello(Black): (C 4 - - B B B W @ - ).
+mdippelOthello(Black): (C 5 - - - B B W @ - ).
+mdippelOthello(Black): (C 6 - - - - B B W W ).
+mdippelOthello(Black): (C 7 - - - - - - W @ ).
+mdippelOthello(Black): (C 8 - - - - - @ W B ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............possible_chosen:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - - - - - - ).
+mdippelOthello(Black): (C 5 - - - - - - - - ).
+mdippelOthello(Black): (C 6 - - - - - - - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - X - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - B B B W - - ).
+mdippelOthello(Black): (C 5 - - - B B W - - ).
+mdippelOthello(Black): (C 6 - - - - B B W W ).
+mdippelOthello(Black): (C 7 - - - - - - W - ).
+mdippelOthello(Black): (C 8 - - - - - B B B ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............White (Opponent) possible_moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - @ @ - - - - ).
+mdippelOthello(Black): (C 4 - @ B B B W - - ).
+mdippelOthello(Black): (C 5 - - @ B B W - - ).
+mdippelOthello(Black): (C 6 - - - @ B B W W ).
+mdippelOthello(Black): (C 7 - - - @ - @ W - ).
+mdippelOthello(Black): (C 8 - - - - - B B B ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (B f 8).
+Referee Move #10: (B f 8) .... Black(mdippelOthello) 9920ms 573866ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - B B B W - - * 
+Referee:  5 * - - - B B W - - * 
+Referee:  6 * - - - - B B W W * 
+Referee:  7 * - - - - - - W - * 
+Referee:  8 * - - - - - B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - B B B W - - ).
+mdippelOthello(White): (C 5 - - - B B W - - ).
+mdippelOthello(White): (C 6 - - - - B B W W ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - - W B ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Black(opponent) to f 8).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - - - - - - ).
+mdippelOthello(White): (C 5 - - - - - - - - ).
+mdippelOthello(White): (C 6 - - - - - - - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - X - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............legal_moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - X X - ).
+mdippelOthello(White): (C 4 - - - - - - X - ).
+mdippelOthello(White): (C 5 - - - - - - X - ).
+mdippelOthello(White): (C 6 - - - - - - - - ).
+mdippelOthello(White): (C 7 - - - - - - - X ).
+mdippelOthello(White): (C 8 - - - - - X - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............isLegalMove!).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - B B B W - - ).
+mdippelOthello(White): (C 5 - - - B B W - - ).
+mdippelOthello(White): (C 6 - - - - B B W W ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - B B B ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Possible White (Self) moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - @ @ - - - - ).
+mdippelOthello(White): (C 4 - @ B B B W - - ).
+mdippelOthello(White): (C 5 - - @ B B W - - ).
+mdippelOthello(White): (C 6 - - - @ B B W W ).
+mdippelOthello(White): (C 7 - - - @ - @ W - ).
+mdippelOthello(White): (C 8 - - - - - B B B ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............possible_chosen:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - X - - - - - - ).
+mdippelOthello(White): (C 5 - - - - - - - - ).
+mdippelOthello(White): (C 6 - - - - - - - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - W W W W W - - ).
+mdippelOthello(White): (C 5 - - - B B W - - ).
+mdippelOthello(White): (C 6 - - - - B B W W ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - B B B ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Black (Opponent) possible_moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - @ @ @ @ @ @ - ).
+mdippelOthello(White): (C 4 - W W W W W @ - ).
+mdippelOthello(White): (C 5 - - - B B W @ - ).
+mdippelOthello(White): (C 6 - - - - B B W W ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - B B B ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (W b 4).
+Referee Move #11: (W b 4) .... White(mdippelOthello) 16804ms 544140ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - W W W W W - - * 
+Referee:  5 * - - - B B W - - * 
+Referee:  6 * - - - - B B W W * 
+Referee:  7 * - - - - - - W - * 
+Referee:  8 * - - - - - B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - B B B W - - ).
+mdippelOthello(Black): (C 5 - - - B B W - - ).
+mdippelOthello(Black): (C 6 - - - - B B W W ).
+mdippelOthello(Black): (C 7 - - - - - - W - ).
+mdippelOthello(Black): (C 8 - - - - - B B B ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............White(opponent) to b 4).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - X - - - - - - ).
+mdippelOthello(Black): (C 5 - - - - - - - - ).
+mdippelOthello(Black): (C 6 - - - - - - - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............legal_moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - X X - - - - ).
+mdippelOthello(Black): (C 4 - X - - - - - - ).
+mdippelOthello(Black): (C 5 - - X - - - - - ).
+mdippelOthello(Black): (C 6 - - - X - - - - ).
+mdippelOthello(Black): (C 7 - - - X - X - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............isLegalMove!).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - W W W W W - - ).
+mdippelOthello(Black): (C 5 - - - B B W - - ).
+mdippelOthello(Black): (C 6 - - - - B B W W ).
+mdippelOthello(Black): (C 7 - - - - - - W - ).
+mdippelOthello(Black): (C 8 - - - - - B B B ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............Possible Black (Self) moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - @ @ @ @ @ @ - ).
+mdippelOthello(Black): (C 4 - W W W W W @ - ).
+mdippelOthello(Black): (C 5 - - - B B W @ - ).
+mdippelOthello(Black): (C 6 - - - - B B W W ).
+mdippelOthello(Black): (C 7 - - - - - - W - ).
+mdippelOthello(Black): (C 8 - - - - - B B B ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............possible_chosen:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - - - - - - ).
+mdippelOthello(Black): (C 5 - - - - - - X - ).
+mdippelOthello(Black): (C 6 - - - - - - - - ).
+mdippelOthello(Black): (C 7 - - - - - - - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - W W W W W - - ).
+mdippelOthello(Black): (C 5 - - - B B B B - ).
+mdippelOthello(Black): (C 6 - - - - B B B W ).
+mdippelOthello(Black): (C 7 - - - - - - B - ).
+mdippelOthello(Black): (C 8 - - - - - B B B ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............White (Opponent) possible_moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - W W W W W - - ).
+mdippelOthello(Black): (C 5 - - - B B B B - ).
+mdippelOthello(Black): (C 6 - - @ @ B B B W ).
+mdippelOthello(Black): (C 7 - - - - @ @ B @ ).
+mdippelOthello(Black): (C 8 - - - - - B B B ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (B g 5).
+Referee Move #12: (B g 5) .... Black(mdippelOthello) 24579ms 549287ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - W W W W W - - * 
+Referee:  5 * - - - B B B B - * 
+Referee:  6 * - - - - B B B W * 
+Referee:  7 * - - - - - - B - * 
+Referee:  8 * - - - - - B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - W W W W W - - ).
+mdippelOthello(White): (C 5 - - - B B W - - ).
+mdippelOthello(White): (C 6 - - - - B B W W ).
+mdippelOthello(White): (C 7 - - - - - - W - ).
+mdippelOthello(White): (C 8 - - - - - B B B ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Black(opponent) to g 5).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - - - - - - ).
+mdippelOthello(White): (C 5 - - - - - - X - ).
+mdippelOthello(White): (C 6 - - - - - - - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............legal_moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - X X X X X X - ).
+mdippelOthello(White): (C 4 - - - - - - X - ).
+mdippelOthello(White): (C 5 - - - - - - X - ).
+mdippelOthello(White): (C 6 - - - - - - - - ).
+mdippelOthello(White): (C 7 - - - - - - - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............isLegalMove!).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - W W W W W - - ).
+mdippelOthello(White): (C 5 - - - B B B B - ).
+mdippelOthello(White): (C 6 - - - - B B B W ).
+mdippelOthello(White): (C 7 - - - - - - B - ).
+mdippelOthello(White): (C 8 - - - - - B B B ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Possible White (Self) moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - W W W W W - - ).
+mdippelOthello(White): (C 5 - - - B B B B - ).
+mdippelOthello(White): (C 6 - - @ @ B B B W ).
+mdippelOthello(White): (C 7 - - - - @ @ B @ ).
+mdippelOthello(White): (C 8 - - - - - B B B ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............possible_chosen:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - - - - - - - - ).
+mdippelOthello(White): (C 5 - - - - - - - - ).
+mdippelOthello(White): (C 6 - - - - - - - - ).
+mdippelOthello(White): (C 7 - - - - - X - - ).
+mdippelOthello(White): (C 8 - - - - - - - - ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - - - - - - - - ).
+mdippelOthello(White): (C 4 - W W W W W - - ).
+mdippelOthello(White): (C 5 - - - W B W B - ).
+mdippelOthello(White): (C 6 - - - - W W B W ).
+mdippelOthello(White): (C 7 - - - - - W B - ).
+mdippelOthello(White): (C 8 - - - - - B B B ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (C ..............Black (Opponent) possible_moves:).
+mdippelOthello(White): (C   a b c d e f g h).
+mdippelOthello(White): (C 1 - - - - - - - - ).
+mdippelOthello(White): (C 2 - - - - - - - - ).
+mdippelOthello(White): (C 3 - @ @ @ @ @ @ - ).
+mdippelOthello(White): (C 4 - W W W W W - - ).
+mdippelOthello(White): (C 5 - - @ W B W B - ).
+mdippelOthello(White): (C 6 - - - @ W W B W ).
+mdippelOthello(White): (C 7 - - - - @ W B - ).
+mdippelOthello(White): (C 8 - - - - @ B B B ).
+mdippelOthello(White): (C ).
+mdippelOthello(White): (W f 7).
+Referee Move #13: (W f 7) .... White(mdippelOthello) 18766ms 525374ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - W W W W W - - * 
+Referee:  5 * - - - W B W B - * 
+Referee:  6 * - - - - W W B W * 
+Referee:  7 * - - - - - W B - * 
+Referee:  8 * - - - - - B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - W W W W W - - ).
+mdippelOthello(Black): (C 5 - - - B B B B - ).
+mdippelOthello(Black): (C 6 - - - - B B B W ).
+mdippelOthello(Black): (C 7 - - - - - - B - ).
+mdippelOthello(Black): (C 8 - - - - - B B B ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............White(opponent) to f 7).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - - - - - - ).
+mdippelOthello(Black): (C 5 - - - - - - - - ).
+mdippelOthello(Black): (C 6 - - - - - - - - ).
+mdippelOthello(Black): (C 7 - - - - - X - - ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............legal_moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - - - - - - - - ).
+mdippelOthello(Black): (C 5 - - - - - - - - ).
+mdippelOthello(Black): (C 6 - - X X - - - - ).
+mdippelOthello(Black): (C 7 - - - - X X - X ).
+mdippelOthello(Black): (C 8 - - - - - - - - ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............isLegalMove!).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (C 1 - - - - - - - - ).
+mdippelOthello(Black): (C 2 - - - - - - - - ).
+mdippelOthello(Black): (C 3 - - - - - - - - ).
+mdippelOthello(Black): (C 4 - W W W W W - - ).
+mdippelOthello(Black): (C 5 - - - W B W B - ).
+mdippelOthello(Black): (C 6 - - - - W W B W ).
+mdippelOthello(Black): (C 7 - - - - - W B - ).
+mdippelOthello(Black): (C 8 - - - - - B B B ).
+mdippelOthello(Black): (C ).
+mdippelOthello(Black): (C ..............Possible Black (Self) moves:).
+mdippelOthello(Black): (C   a b c d e f g h).
+mdippelOthello(Black): (null).

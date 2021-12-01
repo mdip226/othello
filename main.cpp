@@ -4,6 +4,7 @@
 #include <cstdint>
 #include <bitset>
 #include <tuple>
+#include <time.h>
 #include "debug.h"
 #include "moves.h"
 #include "actions.h"
@@ -15,12 +16,12 @@ int main(int argc, char const *argv[])
 {
     bool isBlack;
     bool isInteractive = false;
-    bool isFirstTurn = true;
-    bool playItself = false;
+    // bool isFirstTurn = true;
+    // bool playItself = false;
     for (int i = 1; i < argc; ++i) {
-        if (string(argv[i]) == "-s") {
-            playItself = true;
-        }
+        // if (string(argv[i]) == "-s") {
+        //     playItself = true;
+        // }
         if (string(argv[i]) == "-i") {
             isInteractive = true;
         }
@@ -31,6 +32,8 @@ int main(int argc, char const *argv[])
     print_board(black, white);
 
     for (string input; getline(cin, input);) {
+        cout << "C ..............Time Remaining: " << timeRemaining << endl;
+        time_t start = time(NULL);
         // ignore comments
         if (!input.compare(0, 1, "C")) {
             continue;
@@ -69,45 +72,43 @@ int main(int argc, char const *argv[])
                 board = playW(input, board);
             }
         }
-// pretty sure we don't need this        
-        // stringstream sstream(input);
-        // int n;
-        // if (!(sstream >> n).fail()) {
-        //     cout << "C " << n << endl;
-        //     exit(0);
-        // }
 
         // check for endgame
         bool isEnd = is_end(get<AI>(board), get<OPPONENT>(board));
         // otherwise, make my move
         if (!isEnd) {
             board = playSelf(board, isBlack);
+            
         }
+        time_t end = time(NULL);
+        int moveTime = end-start;
+        timeRemaining -= moveTime;
+        cout << "C ..............Time Remaining: " << timeRemaining << endl;
 
         // TODO cleanup
-        if (!input.compare("") && isInteractive) {
-            u64 legal_moves = get_legal_moves(get<OPPONENT>(board), get<AI>(board));
-            if (legal_moves != 0UL) {
-                u64 move = pick_randomly(legal_moves);
-                bool isLegal = is_legal(move, legal_moves);
-                if (isLegal)
-                {
-                    if (isBlack) {
-                        board = play(move, get<OPPONENT>(board), get<AI>(board), false);
-                        print_board(get<AI>(board), get<OPPONENT>(board));
-                    }else {
-                        board = play(move, get<OPPONENT>(board), get<AI>(board), false);
-                        print_board(get<OPPONENT>(board), get<AI>(board));
-                    }
-                }else {
-                    cout << "C ERROR in either get_legal_moves() or pick_randomly()";
-                }
-            }
-            isFirstTurn = false;
-        }
-        if (isInteractive) {
-            cout << "C Just Press enter to pick randomly." << endl;
-        }
+        // if (!input.compare("") && isInteractive) {
+        //     u64 legal_moves = get_legal_moves(get<OPPONENT>(board), get<AI>(board));
+        //     if (legal_moves != 0UL) {
+        //         u64 move = pick_randomly(legal_moves);
+        //         bool isLegal = is_legal(move, legal_moves);
+        //         if (isLegal)
+        //         {
+        //             if (isBlack) {
+        //                 board = play(move, get<OPPONENT>(board), get<AI>(board), false);
+        //                 print_board(get<AI>(board), get<OPPONENT>(board));
+        //             }else {
+        //                 board = play(move, get<OPPONENT>(board), get<AI>(board), false);
+        //                 print_board(get<OPPONENT>(board), get<AI>(board));
+        //             }
+        //         }else {
+        //             cout << "C ERROR in either get_legal_moves() or pick_randomly()";
+        //         }
+        //     }
+        //     // isFirstTurn = false;
+        // }
+        // if (isInteractive) {
+        //     cout << "C Just Press enter to pick randomly." << endl;
+        // }
     }
     return 0;
 }

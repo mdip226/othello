@@ -1,11 +1,20 @@
 #if !defined(DEBUG_H)
 #define DEBUG_H
 
-#include <cstdint>
+#include "utils.h"
 
-void print_board(uint64_t black, uint64_t white);
-void print_legal_moves(uint64_t player, uint64_t opponent);
-void print_uint(uint64_t bits);
+#define DEBUG 0
+
+// prints out board state
+void print_board(u64 black, u64 white);
+
+// prints legal moves
+// if isBlack == true, prints black moves
+// if isBlack == false, prints white moves
+void print_legal_moves(u64 black, u64 white, bool isBlack);
+
+// prints a single u64 like it were a board
+void print_uint(u64 bits);
 
 #endif // DEBUG_H
 

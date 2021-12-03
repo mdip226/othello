@@ -1,0 +1,3 @@
+convert board functions to use tie
+
+add checks for legal moves to catch errors

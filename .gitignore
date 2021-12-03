@@ -1,0 +1,6 @@
+other/
+trash/
+*.o
+*othello
+*test
+*password

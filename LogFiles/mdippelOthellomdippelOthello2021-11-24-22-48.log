@@ -1,0 +1,999 @@
+mdippelOthello(Black) : (C   a b c d e f g h)
+mdippelOthello(Black) : (C 1 - - - - - - - - )
+mdippelOthello(Black) : (C 2 - - - - - - - - )
+mdippelOthello(Black) : (C 3 - - - - - - - - )
+mdippelOthello(Black) : (C 4 - - - W B - - - )
+mdippelOthello(Black) : (C 5 - - - B W - - - )
+mdippelOthello(Black) : (C 6 - - - - - - - - )
+mdippelOthello(Black) : (C 7 - - - - - - - - )
+mdippelOthello(Black) : (C 8 - - - - - - - - )
+mdippelOthello(Black) : (C )
+mdippelOthello(Black) : (C ..............Time Remaining: 600)
+mdippelOthello(Black) : (C ..............Initializing SELF as black)
+Referee: Initialized mdippelOthello as Black.
+mdippelOthello(White) : (C   a b c d e f g h)
+mdippelOthello(White) : (C 1 - - - - - - - - )
+mdippelOthello(White) : (C 2 - - - - - - - - )
+mdippelOthello(White) : (C 3 - - - - - - - - )
+mdippelOthello(White) : (C 4 - - - W B - - - )
+mdippelOthello(White) : (C 5 - - - B W - - - )
+mdippelOthello(White) : (C 6 - - - - - - - - )
+mdippelOthello(White) : (C 7 - - - - - - - - )
+mdippelOthello(White) : (C 8 - - - - - - - - )
+mdippelOthello(White) : (C )
+mdippelOthello(White) : (C ..............Time Remaining: 600)
+mdippelOthello(White) : (C ..............Initializing SELF as white)
+Referee: Initialized mdippelOthello as White.
+mdippelOthello(Black): (B e 6).
+Referee Move # 0: (B e 6) .... Black(mdippelOthello) 1ms 599999ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - - W B - - - * 
+Referee:  5 * - - - B B - - - * 
+Referee:  6 * - - - - B - - - * 
+Referee:  7 * - - - - - - - - * 
+Referee:  8 * - - - - - - - - * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to e 6).
+mdippelOthello(White): (W f 6).
+Referee Move # 1: (W f 6) .... White(mdippelOthello) 13ms 599987ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - - W B - - - * 
+Referee:  5 * - - - B W - - - * 
+Referee:  6 * - - - - B W - - * 
+Referee:  7 * - - - - - - - - * 
+Referee:  8 * - - - - - - - - * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 600).
+mdippelOthello(Black): (C ..............Time Remaining: 600).
+mdippelOthello(Black): (C ..............White(opponent) to f 6).
+mdippelOthello(Black): (B g 6).
+Referee Move # 2: (B g 6) .... Black(mdippelOthello) 12ms 599987ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - - W B - - - * 
+Referee:  5 * - - - B W - - - * 
+Referee:  6 * - - - - B B B - * 
+Referee:  7 * - - - - - - - - * 
+Referee:  8 * - - - - - - - - * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to g 6).
+mdippelOthello(White): (W g 7).
+Referee Move # 3: (W g 7) .... White(mdippelOthello) 17ms 599970ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - - W B - - - * 
+Referee:  5 * - - - B W - - - * 
+Referee:  6 * - - - - B W B - * 
+Referee:  7 * - - - - - - W - * 
+Referee:  8 * - - - - - - - - * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 599).
+mdippelOthello(Black): (C ..............Time Remaining: 599).
+mdippelOthello(Black): (C ..............White(opponent) to g 7).
+mdippelOthello(Black): (B c 4).
+Referee Move # 4: (B c 4) .... Black(mdippelOthello) 13ms 599974ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - B B B - - - * 
+Referee:  5 * - - - B W - - - * 
+Referee:  6 * - - - - B W B - * 
+Referee:  7 * - - - - - - W - * 
+Referee:  8 * - - - - - - - - * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to c 4).
+mdippelOthello(White): (W h 6).
+Referee Move # 5: (W h 6) .... White(mdippelOthello) 12ms 599958ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - B B B - - - * 
+Referee:  5 * - - - B W - - - * 
+Referee:  6 * - - - - B W W W * 
+Referee:  7 * - - - - - - W - * 
+Referee:  8 * - - - - - - - - * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 599).
+mdippelOthello(Black): (C ..............Time Remaining: 599).
+mdippelOthello(Black): (C ..............White(opponent) to h 6).
+mdippelOthello(Black): (B f 5).
+Referee Move # 6: (B f 5) .... Black(mdippelOthello) 17ms 599957ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - B B B - - - * 
+Referee:  5 * - - - B B B - - * 
+Referee:  6 * - - - - B W W W * 
+Referee:  7 * - - - - - - W - * 
+Referee:  8 * - - - - - - - - * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to f 5).
+mdippelOthello(White): (W f 4).
+Referee Move # 7: (W f 4) .... White(mdippelOthello) 69ms 599889ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - B B B W - - * 
+Referee:  5 * - - - B B W - - * 
+Referee:  6 * - - - - B W W W * 
+Referee:  7 * - - - - - - W - * 
+Referee:  8 * - - - - - - - - * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 599).
+mdippelOthello(Black): (C ..............Time Remaining: 599).
+mdippelOthello(Black): (C ..............White(opponent) to f 4).
+mdippelOthello(Black): (B h 8).
+Referee Move # 8: (B h 8) .... Black(mdippelOthello) 51ms 599906ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - B B B W - - * 
+Referee:  5 * - - - B B W - - * 
+Referee:  6 * - - - - B B W W * 
+Referee:  7 * - - - - - - B - * 
+Referee:  8 * - - - - - - - B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to h 8).
+mdippelOthello(White): (W g 8).
+Referee Move # 9: (W g 8) .... White(mdippelOthello) 82ms 599807ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - B B B W - - * 
+Referee:  5 * - - - B B W - - * 
+Referee:  6 * - - - - B B W W * 
+Referee:  7 * - - - - - - W - * 
+Referee:  8 * - - - - - - W B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 599).
+mdippelOthello(Black): (C ..............Time Remaining: 599).
+mdippelOthello(Black): (C ..............White(opponent) to g 8).
+mdippelOthello(Black): (B f 8).
+Referee Move #10: (B f 8) .... Black(mdippelOthello) 70ms 599836ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - - B B B W - - * 
+Referee:  5 * - - - B B W - - * 
+Referee:  6 * - - - - B B W W * 
+Referee:  7 * - - - - - - W - * 
+Referee:  8 * - - - - - B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to f 8).
+mdippelOthello(White): (W b 4).
+Referee Move #11: (W b 4) .... White(mdippelOthello) 94ms 599713ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - W W W W W - - * 
+Referee:  5 * - - - B B W - - * 
+Referee:  6 * - - - - B B W W * 
+Referee:  7 * - - - - - - W - * 
+Referee:  8 * - - - - - B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 599).
+mdippelOthello(Black): (C ..............Time Remaining: 599).
+mdippelOthello(Black): (C ..............White(opponent) to b 4).
+mdippelOthello(Black): (B g 5).
+Referee Move #12: (B g 5) .... Black(mdippelOthello) 88ms 599748ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - W W W W W - - * 
+Referee:  5 * - - - B B B B - * 
+Referee:  6 * - - - - B B B W * 
+Referee:  7 * - - - - - - B - * 
+Referee:  8 * - - - - - B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to g 5).
+mdippelOthello(White): (W f 7).
+Referee Move #13: (W f 7) .... White(mdippelOthello) 110ms 599603ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - W W W W W - - * 
+Referee:  5 * - - - W B W B - * 
+Referee:  6 * - - - - W W B W * 
+Referee:  7 * - - - - - W B - * 
+Referee:  8 * - - - - - B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 599).
+mdippelOthello(Black): (C ..............Time Remaining: 599).
+mdippelOthello(Black): (C ..............White(opponent) to f 7).
+mdippelOthello(Black): (B e 8).
+Referee Move #14: (B e 8) .... Black(mdippelOthello) 112ms 599636ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - W W W W W - - * 
+Referee:  5 * - - - W B W B - * 
+Referee:  6 * - - - - W W B W * 
+Referee:  7 * - - - - - B B - * 
+Referee:  8 * - - - - B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to e 8).
+mdippelOthello(White): (W h 5).
+Referee Move #15: (W h 5) .... White(mdippelOthello) 111ms 599492ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - W W W W W - - * 
+Referee:  5 * - - - W B W W W * 
+Referee:  6 * - - - - W W B W * 
+Referee:  7 * - - - - - B B - * 
+Referee:  8 * - - - - B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 599).
+mdippelOthello(Black): (C ..............Time Remaining: 599).
+mdippelOthello(Black): (C ..............White(opponent) to h 5).
+mdippelOthello(Black): (B e 7).
+Referee Move #16: (B e 7) .... Black(mdippelOthello) 163ms 599473ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - W W W W W - - * 
+Referee:  5 * - - - W B W W W * 
+Referee:  6 * - - - - B W B W * 
+Referee:  7 * - - - - B B B - * 
+Referee:  8 * - - - - B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to e 7).
+mdippelOthello(White): (W d 7).
+Referee Move #17: (W d 7) .... White(mdippelOthello) 100ms 599392ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - - - * 
+Referee:  4 * - W W W W W - - * 
+Referee:  5 * - - - W B W W W * 
+Referee:  6 * - - - - W W B W * 
+Referee:  7 * - - - W B B B - * 
+Referee:  8 * - - - - B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 598).
+mdippelOthello(Black): (C ..............Time Remaining: 598).
+mdippelOthello(Black): (C ..............White(opponent) to d 7).
+mdippelOthello(Black): (B g 3).
+Referee Move #18: (B g 3) .... Black(mdippelOthello) 171ms 599302ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - - B - * 
+Referee:  4 * - W W W W B - - * 
+Referee:  5 * - - - W B W W W * 
+Referee:  6 * - - - - W W B W * 
+Referee:  7 * - - - W B B B - * 
+Referee:  8 * - - - - B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to g 3).
+mdippelOthello(White): (W f 3).
+Referee Move #19: (W f 3) .... White(mdippelOthello) 180ms 599212ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - - - - - W B - * 
+Referee:  4 * - W W W W W - - * 
+Referee:  5 * - - - W B W W W * 
+Referee:  6 * - - - - W W B W * 
+Referee:  7 * - - - W B B B - * 
+Referee:  8 * - - - - B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 598).
+mdippelOthello(Black): (C ..............Time Remaining: 598).
+mdippelOthello(Black): (C ..............White(opponent) to f 3).
+mdippelOthello(Black): (B b 3).
+Referee Move #20: (B b 3) .... Black(mdippelOthello) 253ms 599049ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - B - - - W B - * 
+Referee:  4 * - W B W W W - - * 
+Referee:  5 * - - - B B W W W * 
+Referee:  6 * - - - - B W B W * 
+Referee:  7 * - - - W B B B - * 
+Referee:  8 * - - - - B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to b 3).
+mdippelOthello(White): (W d 6).
+Referee Move #21: (W d 6) .... White(mdippelOthello) 222ms 598990ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - B - - - W B - * 
+Referee:  4 * - W B W W W - - * 
+Referee:  5 * - - - W W W W W * 
+Referee:  6 * - - - W W W B W * 
+Referee:  7 * - - - W B B B - * 
+Referee:  8 * - - - - B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 598).
+mdippelOthello(Black): (C ..............Time Remaining: 598).
+mdippelOthello(Black): (C ..............White(opponent) to d 6).
+mdippelOthello(Black): (B a 4).
+Referee Move #22: (B a 4) .... Black(mdippelOthello) 355ms 598694ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - B - - - W B - * 
+Referee:  4 * B B B W W W - - * 
+Referee:  5 * - - - W W W W W * 
+Referee:  6 * - - - W W W B W * 
+Referee:  7 * - - - W B B B - * 
+Referee:  8 * - - - - B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to a 4).
+mdippelOthello(White): (W h 3).
+Referee Move #23: (W h 3) .... White(mdippelOthello) 118ms 598872ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - B - - - W W W * 
+Referee:  4 * B B B W W W - - * 
+Referee:  5 * - - - W W W W W * 
+Referee:  6 * - - - W W W B W * 
+Referee:  7 * - - - W B B B - * 
+Referee:  8 * - - - - B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 597).
+mdippelOthello(Black): (C ..............Time Remaining: 597).
+mdippelOthello(Black): (C ..............White(opponent) to h 3).
+mdippelOthello(Black): (B c 6).
+Referee Move #24: (B c 6) .... Black(mdippelOthello) 193ms 598501ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * - - - - - - - - * 
+Referee:  3 * - B - - - W W W * 
+Referee:  4 * B B B W W W - - * 
+Referee:  5 * - - - W W W W W * 
+Referee:  6 * - - B B B B B W * 
+Referee:  7 * - - - B B B B - * 
+Referee:  8 * - - - - B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to c 6).
+mdippelOthello(White): (W a 2).
+Referee Move #25: (W a 2) .... White(mdippelOthello) 121ms 598751ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * W - - - - - - - * 
+Referee:  3 * - W - - - W W W * 
+Referee:  4 * B B W W W W - - * 
+Referee:  5 * - - - W W W W W * 
+Referee:  6 * - - B B B B B W * 
+Referee:  7 * - - - B B B B - * 
+Referee:  8 * - - - - B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 597).
+mdippelOthello(Black): (C ..............Time Remaining: 597).
+mdippelOthello(Black): (C ..............White(opponent) to a 2).
+mdippelOthello(Black): (B c 2).
+Referee Move #26: (B c 2) .... Black(mdippelOthello) 128ms 598373ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * W - B - - - - - * 
+Referee:  3 * - B - - - W W W * 
+Referee:  4 * B B W W W W - - * 
+Referee:  5 * - - - W W W W W * 
+Referee:  6 * - - B B B B B W * 
+Referee:  7 * - - - B B B B - * 
+Referee:  8 * - - - - B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to c 2).
+mdippelOthello(White): (W c 7).
+Referee Move #27: (W c 7) .... White(mdippelOthello) 55ms 598696ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * W - B - - - - - * 
+Referee:  3 * - B - - - W W W * 
+Referee:  4 * B B W W W W - - * 
+Referee:  5 * - - - W W W W W * 
+Referee:  6 * - - B W B B B W * 
+Referee:  7 * - - W B B B B - * 
+Referee:  8 * - - - - B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 597).
+mdippelOthello(Black): (C ..............Time Remaining: 597).
+mdippelOthello(Black): (C ..............White(opponent) to c 7).
+mdippelOthello(Black): (B g 4).
+Referee Move #28: (B g 4) .... Black(mdippelOthello) 107ms 598266ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * W - B - - - - - * 
+Referee:  3 * - B - - - W W W * 
+Referee:  4 * B B B B B B B - * 
+Referee:  5 * - - - W W B B W * 
+Referee:  6 * - - B W B B B W * 
+Referee:  7 * - - W B B B B - * 
+Referee:  8 * - - - - B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to g 4).
+mdippelOthello(White): (W c 8).
+Referee Move #29: (W c 8) .... White(mdippelOthello) 133ms 598563ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * W - B - - - - - * 
+Referee:  3 * - B - - - W W W * 
+Referee:  4 * B B B B B B W - * 
+Referee:  5 * - - - W W W B W * 
+Referee:  6 * - - B W W B B W * 
+Referee:  7 * - - W W B B B - * 
+Referee:  8 * - - W - B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............White(opponent) to c 8).
+mdippelOthello(Black): (B d 8).
+Referee Move #30: (B d 8) .... Black(mdippelOthello) 56ms 598210ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * W - B - - - - - * 
+Referee:  3 * - B - - - W W W * 
+Referee:  4 * B B B B B B W - * 
+Referee:  5 * - - - B W W B W * 
+Referee:  6 * - - B B W B B W * 
+Referee:  7 * - - W B B B B - * 
+Referee:  8 * - - W B B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to d 8).
+mdippelOthello(White): (W c 5).
+Referee Move #31: (W c 5) .... White(mdippelOthello) 57ms 598506ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * W - B - - - - - * 
+Referee:  3 * - B - - - W W W * 
+Referee:  4 * B B B B B B W - * 
+Referee:  5 * - - W W W W B W * 
+Referee:  6 * - - W B W B B W * 
+Referee:  7 * - - W B B B B - * 
+Referee:  8 * - - W B B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............White(opponent) to c 5).
+mdippelOthello(Black): (B b 8).
+Referee Move #32: (B b 8) .... Black(mdippelOthello) 111ms 598099ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * W - B - - - - - * 
+Referee:  3 * - B - - - W W W * 
+Referee:  4 * B B B B B B W - * 
+Referee:  5 * - - W W W W B W * 
+Referee:  6 * - - W B W B B W * 
+Referee:  7 * - - B B B B B - * 
+Referee:  8 * - B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to b 8).
+mdippelOthello(White): (W c 3).
+Referee Move #33: (W c 3) .... White(mdippelOthello) 160ms 598346ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * W - B - - - - - * 
+Referee:  3 * - B W - - W W W * 
+Referee:  4 * B B W W B B W - * 
+Referee:  5 * - - W W W W B W * 
+Referee:  6 * - - W B W B B W * 
+Referee:  7 * - - B B B B B - * 
+Referee:  8 * - B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............White(opponent) to c 3).
+mdippelOthello(Black): (B b 7).
+Referee Move #34: (B b 7) .... Black(mdippelOthello) 303ms 597796ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * W - B - - - - - * 
+Referee:  3 * - B W - - W W W * 
+Referee:  4 * B B W W B B W - * 
+Referee:  5 * - - W B W W B W * 
+Referee:  6 * - - B B W B B W * 
+Referee:  7 * - B B B B B B - * 
+Referee:  8 * - B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Time Remaining: 600).
+mdippelOthello(White): (C ..............Black(opponent) to b 7).
+mdippelOthello(White): (W a 5).
+Referee Move #35: (W a 5) .... White(mdippelOthello) 168ms 598178ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * W - B - - - - - * 
+Referee:  3 * - B W - - W W W * 
+Referee:  4 * B W W W B B W - * 
+Referee:  5 * W - W B W W B W * 
+Referee:  6 * - - B B W B B W * 
+Referee:  7 * - B B B B B B - * 
+Referee:  8 * - B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............White(opponent) to a 5).
+mdippelOthello(Black): (B a 3).
+Referee Move #36: (B a 3) .... Black(mdippelOthello) 113ms 597683ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * W - B - - - - - * 
+Referee:  3 * B B W - - W W W * 
+Referee:  4 * B B W W B B W - * 
+Referee:  5 * W - B B W W B W * 
+Referee:  6 * - - B B W B B W * 
+Referee:  7 * - B B B B B B - * 
+Referee:  8 * - B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Black(opponent) to a 3).
+mdippelOthello(White): (W b 6).
+Referee Move #37: (W b 6) .... White(mdippelOthello) 186ms 597992ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * - - - - - - - - * 
+Referee:  2 * W - B - - - - - * 
+Referee:  3 * B B W - - W W W * 
+Referee:  4 * B B W W B B W - * 
+Referee:  5 * W - W B W W B W * 
+Referee:  6 * - W W W W B B W * 
+Referee:  7 * - B B B B B B - * 
+Referee:  8 * - B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............White(opponent) to b 6).
+mdippelOthello(Black): (B a 1).
+Referee Move #38: (B a 1) .... Black(mdippelOthello) 92ms 597591ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B - - - - - - - * 
+Referee:  2 * B - B - - - - - * 
+Referee:  3 * B B W - - W W W * 
+Referee:  4 * B B W W B B W - * 
+Referee:  5 * W - W B W W B W * 
+Referee:  6 * - W W W W B B W * 
+Referee:  7 * - B B B B B B - * 
+Referee:  8 * - B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Black(opponent) to a 1).
+mdippelOthello(White): (W a 8).
+Referee Move #39: (W a 8) .... White(mdippelOthello) 10ms 597982ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B - - - - - - - * 
+Referee:  2 * B - B - - - - - * 
+Referee:  3 * B B W - - W W W * 
+Referee:  4 * B B W W B B W - * 
+Referee:  5 * W - W B W W B W * 
+Referee:  6 * - W W W W B B W * 
+Referee:  7 * - W B B B B B - * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............White(opponent) to a 8).
+mdippelOthello(Black): (B a 6).
+Referee Move #40: (B a 6) .... Black(mdippelOthello) 32ms 597559ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B - - - - - - - * 
+Referee:  2 * B - B - - - - - * 
+Referee:  3 * B B W - - W W W * 
+Referee:  4 * B B W W B B W - * 
+Referee:  5 * B - W B W W B W * 
+Referee:  6 * B B B B B B B W * 
+Referee:  7 * - B B B B B B - * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Black(opponent) to a 6).
+mdippelOthello(White): (W a 7).
+Referee Move #41: (W a 7) .... White(mdippelOthello) 12ms 597970ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B - - - - - - - * 
+Referee:  2 * B - B - - - - - * 
+Referee:  3 * B B W - - W W W * 
+Referee:  4 * B B W W B B W - * 
+Referee:  5 * B - W B W W B W * 
+Referee:  6 * B W B B B B B W * 
+Referee:  7 * W B B B B B B - * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............White(opponent) to a 7).
+mdippelOthello(Black): (B b 5).
+Referee Move #42: (B b 5) .... Black(mdippelOthello) 17ms 597542ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B - - - - - - - * 
+Referee:  2 * B - B - - - - - * 
+Referee:  3 * B B W - - W W W * 
+Referee:  4 * B B W W B B W - * 
+Referee:  5 * B B B B W W B W * 
+Referee:  6 * B B B B B B B W * 
+Referee:  7 * W B B B B B B - * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Black(opponent) to b 5).
+mdippelOthello(White): (W c 1).
+Referee Move #43: (W c 1) .... White(mdippelOthello) 32ms 597938ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B - W - - - - - * 
+Referee:  2 * B - W - - - - - * 
+Referee:  3 * B B W - - W W W * 
+Referee:  4 * B B W W B B W - * 
+Referee:  5 * B B B B W W B W * 
+Referee:  6 * B B B B B B B W * 
+Referee:  7 * W B B B B B B - * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............White(opponent) to c 1).
+mdippelOthello(Black): (B e 3).
+Referee Move #44: (B e 3) .... Black(mdippelOthello) 36ms 597506ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B - W - - - - - * 
+Referee:  2 * B - W - - - - - * 
+Referee:  3 * B B W - B W W W * 
+Referee:  4 * B B W B B B W - * 
+Referee:  5 * B B B B W W B W * 
+Referee:  6 * B B B B B B B W * 
+Referee:  7 * W B B B B B B - * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Black(opponent) to e 3).
+mdippelOthello(White): (W h 7).
+Referee Move #45: (W h 7) .... White(mdippelOthello) 9ms 597929ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B - W - - - - - * 
+Referee:  2 * B - W - - - - - * 
+Referee:  3 * B B W - B W W W * 
+Referee:  4 * B B W B B B W - * 
+Referee:  5 * B B B B W W B W * 
+Referee:  6 * B B B B B B W W * 
+Referee:  7 * W W W W W W W W * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............White(opponent) to h 7).
+mdippelOthello(Black): (B h 4).
+Referee Move #46: (B h 4) .... Black(mdippelOthello) 9ms 597497ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B - W - - - - - * 
+Referee:  2 * B - W - - - - - * 
+Referee:  3 * B B W - B W W W * 
+Referee:  4 * B B W B B B B B * 
+Referee:  5 * B B B B W W B B * 
+Referee:  6 * B B B B B B W B * 
+Referee:  7 * W W W W W W W B * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Black(opponent) to h 4).
+mdippelOthello(White): (W f 2).
+Referee Move #47: (W f 2) .... White(mdippelOthello) 16ms 597913ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B - W - - - - - * 
+Referee:  2 * B - W - - W - - * 
+Referee:  3 * B B W - W W W W * 
+Referee:  4 * B B W W B B B B * 
+Referee:  5 * B B W B W W B B * 
+Referee:  6 * B W B B B B W B * 
+Referee:  7 * W W W W W W W B * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............White(opponent) to f 2).
+mdippelOthello(Black): (B d 3).
+Referee Move #48: (B d 3) .... Black(mdippelOthello) 10ms 597487ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B - W - - - - - * 
+Referee:  2 * B - W - - W - - * 
+Referee:  3 * B B B B W W W W * 
+Referee:  4 * B B B B B B B B * 
+Referee:  5 * B B W B W W B B * 
+Referee:  6 * B W B B B B W B * 
+Referee:  7 * W W W W W W W B * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Black(opponent) to d 3).
+mdippelOthello(White): (W d 2).
+Referee Move #49: (W d 2) .... White(mdippelOthello) 4ms 597909ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B - W - - - - - * 
+Referee:  2 * B - W W - W - - * 
+Referee:  3 * B B B W W W W W * 
+Referee:  4 * B B B W B B B B * 
+Referee:  5 * B B W W W W B B * 
+Referee:  6 * B W B W B B W B * 
+Referee:  7 * W W W W W W W B * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............White(opponent) to d 2).
+mdippelOthello(Black): (B h 2).
+Referee Move #50: (B h 2) .... Black(mdippelOthello) 4ms 597483ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B - W - - - - - * 
+Referee:  2 * B - W W - W - B * 
+Referee:  3 * B B B W W W B B * 
+Referee:  4 * B B B W B B B B * 
+Referee:  5 * B B W W W W B B * 
+Referee:  6 * B W B W B B W B * 
+Referee:  7 * W W W W W W W B * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Black(opponent) to h 2).
+mdippelOthello(White): (W g 2).
+Referee Move #51: (W g 2) .... White(mdippelOthello) 3ms 597906ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B - W - - - - - * 
+Referee:  2 * B - W W - W W B * 
+Referee:  3 * B B B W W W W B * 
+Referee:  4 * B B B W B B W B * 
+Referee:  5 * B B W W W W W B * 
+Referee:  6 * B W B W B B W B * 
+Referee:  7 * W W W W W W W B * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............White(opponent) to g 2).
+mdippelOthello(Black): (B g 1).
+Referee Move #52: (B g 1) .... Black(mdippelOthello) 2ms 597481ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B - W - - - B - * 
+Referee:  2 * B - W W - W B B * 
+Referee:  3 * B B B W W W B B * 
+Referee:  4 * B B B W B B B B * 
+Referee:  5 * B B W W W W B B * 
+Referee:  6 * B W B W B B B B * 
+Referee:  7 * W W W W W W B B * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Black(opponent) to g 1).
+mdippelOthello(White): (W b 2).
+Referee Move #53: (W b 2) .... White(mdippelOthello) 0ms 597906ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B - W - - - B - * 
+Referee:  2 * B W W W - W B B * 
+Referee:  3 * B W W W W W B B * 
+Referee:  4 * B W B W B B B B * 
+Referee:  5 * B W W W W W B B * 
+Referee:  6 * B W B W B B B B * 
+Referee:  7 * W W W W W W B B * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............White(opponent) to b 2).
+mdippelOthello(Black): (B b 1).
+Referee Move #54: (B b 1) .... Black(mdippelOthello) 0ms 597481ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B B W - - - B - * 
+Referee:  2 * B B B W - W B B * 
+Referee:  3 * B B W B W W B B * 
+Referee:  4 * B B B W B B B B * 
+Referee:  5 * B B W W W W B B * 
+Referee:  6 * B B B W B B B B * 
+Referee:  7 * W B W W W W B B * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Black(opponent) to b 1).
+mdippelOthello(White): (W h 1).
+Referee Move #55: (W h 1) .... White(mdippelOthello) 0ms 597906ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B B W - - - B W * 
+Referee:  2 * B B B W - W W B * 
+Referee:  3 * B B W B W W B B * 
+Referee:  4 * B B B W B B B B * 
+Referee:  5 * B B W W W W B B * 
+Referee:  6 * B B B W B B B B * 
+Referee:  7 * W B W W W W B B * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............White(opponent) to h 1).
+mdippelOthello(Black): (B f 1).
+Referee Move #56: (B f 1) .... Black(mdippelOthello) 0ms 597481ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B B W - - B B W * 
+Referee:  2 * B B B W - B B B * 
+Referee:  3 * B B W B W B B B * 
+Referee:  4 * B B B W B B B B * 
+Referee:  5 * B B W W W W B B * 
+Referee:  6 * B B B W B B B B * 
+Referee:  7 * W B W W W W B B * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Black(opponent) to f 1).
+mdippelOthello(White): (W e 1).
+Referee Move #57: (W e 1) .... White(mdippelOthello) 0ms 597906ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B B W - W W W W * 
+Referee:  2 * B B B W - B B B * 
+Referee:  3 * B B W B W B B B * 
+Referee:  4 * B B B W B B B B * 
+Referee:  5 * B B W W W W B B * 
+Referee:  6 * B B B W B B B B * 
+Referee:  7 * W B W W W W B B * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............White(opponent) to e 1).
+mdippelOthello(Black): (B d 1).
+Referee Move #58: (B d 1) .... Black(mdippelOthello) 0ms 597481ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B B B B W W W W * 
+Referee:  2 * B B B B - B B B * 
+Referee:  3 * B B W B W B B B * 
+Referee:  4 * B B B W B B B B * 
+Referee:  5 * B B W W W W B B * 
+Referee:  6 * B B B W B B B B * 
+Referee:  7 * W B W W W W B B * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Time Remaining: 599).
+mdippelOthello(White): (C ..............Black(opponent) to d 1).
+mdippelOthello(White): (W).
+Referee Move #59:     (W) .... White(mdippelOthello) 1ms 597905ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B B B B W W W W * 
+Referee:  2 * B B B B - B B B * 
+Referee:  3 * B B W B W B B B * 
+Referee:  4 * B B B W B B B B * 
+Referee:  5 * B B W W W W B B * 
+Referee:  6 * B B B W B B B B * 
+Referee:  7 * W B W W W W B B * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............Time Remaining: 596).
+mdippelOthello(Black): (C ..............White passes.).
+mdippelOthello(Black): (B e 2).
+Referee Move #60: (B e 2) .... Black(mdippelOthello) 0ms 597481ms)
+Referee:      a b c d e f g h  
+Referee:    ******************** 
+Referee:  1 * B B B B W W W W * 
+Referee:  2 * B B B B B B B B * 
+Referee:  3 * B B W B B B B B * 
+Referee:  4 * B B B W B B B B * 
+Referee:  5 * B B W W W W B B * 
+Referee:  6 * B B B W B B B B * 
+Referee:  7 * W B W W W W B B * 
+Referee:  8 * W B B B B B B B * 
+Referee:   ******************** 
+Referee EndGame Score: net = 30, Black(47, 2519ms), White(17, 2095ms)

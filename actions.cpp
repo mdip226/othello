@@ -6,6 +6,8 @@
 #include "moves.h"
 #include <stdlib.h>
 #include "actions.h"
+#include "minmax.h"
+
 
 
 u64 _make_move(u64 move, u64 board)
@@ -149,6 +151,7 @@ std::tuple<u64, u64> playB(std::string input, std::tuple<u64, u64> board) {
         std::cout << "C ..............legal_moves:" << std::endl;
         print_uint(legal_moves);
     }
+
     bool isLegalMove = is_legal(move, legal_moves);
     if (isLegalMove) {
         if (DEBUG) {
@@ -186,7 +189,7 @@ std::tuple<u64, u64> playW(std::string input, std::tuple<u64, u64> board) {
         }
         board = play(move, std::get<OPPONENT>(board), std::get<AI>(board), false);
         if (DEBUG) {
-            print_board(std::get<OPPONENT>(board), std::get<AI>(board));
+            print_board(std::get<AI>(board), std::get<OPPONENT>(board));
         }
         return board;
     }else {
@@ -221,6 +224,7 @@ void end_of_game(std::tuple<u64, u64> board, bool isBlack) {
 }
 
 std::tuple<u64, u64> playSelf(std::tuple<u64, u64> board, bool isBlack) {
+    moveNumber++;
     std::string color = isBlack ? "Black" : "White";
     if (DEBUG) {
         std::cout << "C ..............Possible " << color << " (Self) moves:" << std::endl;
@@ -232,7 +236,7 @@ std::tuple<u64, u64> playSelf(std::tuple<u64, u64> board, bool isBlack) {
     }
     u64 legal_moves = get_legal_moves(std::get<AI>(board), std::get<OPPONENT>(board));
     if (legal_moves != 0UL) {
-        u64 move = pick_randomly(legal_moves);
+        u64 move = playAlphaBeta(board);
         bool isLegal = is_legal(move, legal_moves);
         if (isLegal) {
             board = play(move, std::get<AI>(board), std::get<OPPONENT>(board), true);
@@ -246,7 +250,7 @@ std::tuple<u64, u64> playSelf(std::tuple<u64, u64> board, bool isBlack) {
             if (isBlack) {
                 print_board(std::get<AI>(board), std::get<OPPONENT>(board));
                 std::cout << "C ..............White (Opponent) possible_moves:" << std::endl;
-                print_legal_moves(std::get<OPPONENT>(board), std::get<AI>(board), false);
+                print_legal_moves(std::get<AI>(board), std::get<OPPONENT>(board), false);
             }else {
                 print_board(std::get<OPPONENT>(board), std::get<AI>(board));
                 std::cout << "C ..............Black (Opponent) possible_moves:" << std::endl;

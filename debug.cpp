@@ -4,6 +4,7 @@
 
 void print_board(u64 black, u64 white) {
     u64 mask = 0x8000000000000000;
+    
     std::cout << "C   a b c d e f g h" << std::endl;
     for (int i = 0; i < 8; ++i) {
         std::cout << "C " << i+1 << " ";
